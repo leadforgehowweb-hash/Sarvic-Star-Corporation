@@ -74,7 +74,7 @@ export const Footer: React.FC<FooterProps> = ({
           {/* Brand Info & Origin */}
           <div className="lg:col-span-2 space-y-4">
             {(() => {
-              const cleanBrandName = (brandConfig.brandName || 'MEDTREND').replace(/[®™]/g, '').trim();
+              const cleanBrandName = (brandConfig.brandName || 'Sarvic Star Corporation').replace(/[®™]/g, '').trim();
               const registeredSymbol = brandConfig.registeredMark || (/[®™]/.test(brandConfig.brandName) ? '®' : '');
               const isCustomImg = brandConfig.logoConfig.type === 'custom_image' && Boolean(brandConfig.logoConfig.customImageUrl);
               const shape = brandConfig.logoConfig.logoShape || 'transparent';

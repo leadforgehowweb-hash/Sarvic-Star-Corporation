@@ -136,7 +136,7 @@ export const DeveloperModeModal: React.FC<DeveloperModeModalProps> = ({ isOpen, 
 
             <button
               onClick={() => {
-                if (confirm('Reset all brand configuration back to factory default MEDTREND® values?')) {
+                if (confirm('Reset all brand configuration back to factory default values?')) {
                   resetToDefaults();
                   triggerSavedIndicator();
                 }
@@ -229,7 +229,7 @@ export const DeveloperModeModal: React.FC<DeveloperModeModalProps> = ({ isOpen, 
                       updateBrandConfig({ brandName: e.target.value });
                       triggerSavedIndicator();
                     }}
-                    placeholder="e.g. MEDTREND® or HOWWEB"
+                    placeholder="e.g. Sarvic Star Corporation"
                     className="w-full p-3 rounded-xl border border-[#B3E5FC] bg-white focus:bg-white text-[#0B2838] font-bold text-sm focus:border-[#0288D1] focus:ring-2 focus:ring-[#B3E5FC] outline-none transition-all shadow-xs"
                   />
                   <p className="text-[11px] text-[#355C75]">

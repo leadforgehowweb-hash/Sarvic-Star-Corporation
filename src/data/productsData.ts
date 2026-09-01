@@ -298,7 +298,7 @@ export const PRODUCTS: Product[] = [
     model3DType: 'forceps',
     videoLoopUrl: '/images/3d-models/MT-HF-002-loop.mp4',
     shortDesc: 'Precision-curved hemostatic forceps for occluding small-to-medium blood vessels with non-slip grip.',
-    fullDesc: 'MEDTREND® Kelly Hemostatic Forceps (MT-HF-001) are hot-drop forged in Sialkot from certified German stainless steel. Features a 3-position positive-locking ratchet and cross-serrated inner jaws engineered for definitive vessel occlusion without traumatic vessel slippage. Ultrasonic passivated for maximum corrosion resistance.',
+    fullDesc: 'Sarvic Star Corporation® Kelly Hemostatic Forceps (MT-HF-001) are hot-drop forged in Sialkot from certified German stainless steel. Features a 3-position positive-locking ratchet and cross-serrated inner jaws engineered for definitive vessel occlusion without traumatic vessel slippage. Ultrasonic passivated for maximum corrosion resistance.',
     features: [
       'Hot drop-forged from premium surgical stainless steel',
       'Smooth 3-step locking ratchet mechanism',
@@ -349,7 +349,7 @@ export const PRODUCTS: Product[] = [
     model3DType: 'scalpel',
     videoLoopUrl: '/images/3d-models/MT-HF-001-loop.mp4',
     shortDesc: 'Solid cylindrical surgical scalpel handle with non-slip diamond knurling and precision blade fitting.',
-    fullDesc: 'MEDTREND® MT-SH-001 Precision Surgical Scalpel Handle is CNC machined from solid medical-grade stainless steel in Sialkot. Engineered with cross-hatched tactile knurling for ultimate micro-surgical fingertip control during delicate incisions.',
+    fullDesc: 'Sarvic Star Corporation® MT-SH-001 Precision Surgical Scalpel Handle is CNC machined from solid medical-grade stainless steel in Sialkot. Engineered with cross-hatched tactile knurling for ultimate micro-surgical fingertip control during delicate incisions.',
     features: [
       'CNC milled diamond-knurled barrel for maximum grip security',
       'Compatible with standard surgical blade sizes #10, #11, #12, #15',
@@ -489,7 +489,7 @@ export const PRODUCTS: Product[] = [
     has3DModel: true,
     model3DType: 'scissors',
     shortDesc: 'Gold-ringed Tungsten Carbide Metzenbaum scissors for effortless anatomical tissue dissection.',
-    fullDesc: 'MEDTREND® Metzenbaum TC Scissors are engineered with sintered Tungsten Carbide blade inserts seamlessly bonded to a flexible surgical stainless steel shank. Gold-plated finger rings signify superior edge retention that stays razor-sharp up to 5x longer than standard scissors.',
+    fullDesc: 'Sarvic Star Corporation® Metzenbaum TC Scissors are engineered with sintered Tungsten Carbide blade inserts seamlessly bonded to a flexible surgical stainless steel shank. Gold-plated finger rings signify superior edge retention that stays razor-sharp up to 5x longer than standard scissors.',
     features: [
       'Sintered Tungsten Carbide cutting edges for extreme durability',
       'Gold-plated ergonomic ring handles',

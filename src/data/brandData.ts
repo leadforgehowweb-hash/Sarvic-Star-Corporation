@@ -1,13 +1,13 @@
 import { HeroSlide } from '../types';
 
 export const BRAND_CONFIG = {
-  companyName: 'Medtrend Pvt. Ltd.',
-  brandName: 'MEDTREND®',
-  fullLegalName: 'Medtrend Pvt. Ltd. Surgical & Medical Instruments',
+  companyName: 'Sarvic Star Corporation',
+  brandName: 'Sarvic Star Corporation',
+  fullLegalName: 'Sarvic Star Corporation Surgical & Medical Instruments',
   origin: 'Sialkot, Pakistan',
-  primaryMarkets: ['United States', 'European Union', 'GCC Countries', 'Worldwide'],
+  primaryMarkets: ['United States', 'United Kingdom', 'European Union', 'GCC Countries', 'Worldwide'],
   taglines: {
-    primary: 'Precision You Can Trust.',
+    primary: 'Excellence in Surgical Craftsmanship.',
     alternatives: [
       'Precision in Every Instrument',
       'Crafted for Precision. Built for Care.',
@@ -16,7 +16,7 @@ export const BRAND_CONFIG = {
       'From Sialkot to the World'
     ]
   },
-  positioningStatement: 'MEDTREND® is a Pakistan-based surgical and medical instruments brand delivering professionally manufactured instruments from Sialkot to customers worldwide. Combining skilled manufacturing, precision-focused production and modern global commerce, Medtrend serves healthcare professionals, institutions, distributors, retailers and OEM partners across international markets.',
+  positioningStatement: 'Sarvic Star Corporation is a premier manufacturer and international exporter of high-precision surgical, dental, orthopedic, and veterinary instruments crafted in Sialkot, Pakistan to strict international quality standards.',
   pillars: [
     { title: 'Sialkot Craftsmanship', desc: 'Over a century of world-renowned metallurgical heritage and hand-finished craftsmanship.' },
     { title: 'Engineering Precision', desc: 'CNC tolerances within ±0.02mm, German-grade forging dies, and Rockwell HRC 48-52 heat treatment.' },
@@ -32,7 +32,7 @@ export const BRAND_CONFIG = {
     deepSapphire: '#01579B'
   },
   folderStructureGuide: {
-    description: 'Medtrend uses a strict hierarchical folder architecture for website assets and product inventory images.',
+    description: 'Sarvic Star Corporation uses a strict hierarchical folder architecture for website assets and product inventory images.',
     rootDirectories: [
       {
         folder: 'public/images/home/',
@@ -172,9 +172,9 @@ export const BRAND_GUIDELINES_SECTIONS: BrandGuidelineSection[] = [
     category: 'Brand Foundations',
     title: 'Brand Identity & Legal Name',
     points: [
-      'Brand Name: MEDTREND® (Medtrend Pvt. Ltd.)',
+      'Brand Name: Sarvic Star Corporation',
       'Origin: Sialkot, Pakistan — the global capital of surgical manufacturing',
-      'Target Markets: United States, European Union, GCC countries & Worldwide'
+      'Target Markets: United States, United Kingdom, European Union, GCC countries & Worldwide'
     ]
   },
   {
@@ -182,7 +182,7 @@ export const BRAND_GUIDELINES_SECTIONS: BrandGuidelineSection[] = [
     category: 'Brand Foundations',
     title: 'Taglines & Brand Promises',
     points: [
-      'Primary Tagline: "Precision You Can Trust."',
+      'Primary Tagline: "Excellence in Surgical Craftsmanship."',
       'Alternative: "Crafted for Precision. Built for Care."',
       'Alternative: "Engineering Surgical Precision"',
       'Alternative: "From Sialkot to the World"'
@@ -256,7 +256,7 @@ export const SIALKOT_MANUFACTURING_STORY = {
   heading: 'The Sialkot Heritage & German Precision Metallurgy',
   paragraphs: [
     'For generations, Sialkot, Pakistan has stood as the undisputed global capital of surgical instrument craftsmanship, supplying over 70% of the world’s hand-held medical instruments.',
-    'MEDTREND® unites this revered artisan heritage with state-of-the-art CNC micro-milling, robotic forging dies, and German DIN-standard medical metallurgy (AISI 410, 420, and 440 stainless steel grades).',
+    'Sarvic Star Corporation unites this revered artisan heritage with state-of-the-art CNC micro-milling, robotic forging dies, and German DIN-standard medical metallurgy (AISI 410, 420, and 440 stainless steel grades).',
     'Every single instrument undergoes a rigorous 7-stage quality protocol: raw material spectrometric analysis, precision drop-forging, CNC jaw profiling, vacuum heat treatment, ultrasonic chemical passivation, fiber-laser marking, and microscope-guided blade tensioning.'
   ],
   stats: [

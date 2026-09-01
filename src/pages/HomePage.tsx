@@ -444,7 +444,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <span>•</span>
                 <span className="text-[#81D4FA]">ASTM A967 Ultrasonic Passivated</span>
                 <span>•</span>
-                <span className="text-[#81D4FA]">Fiber Laser MEDTREND® Etched</span>
+                <span className="text-[#81D4FA]">Fiber Laser {brandConfig.brandName} Etched</span>
               </div>
               <div className="flex items-center gap-2">
                 <button

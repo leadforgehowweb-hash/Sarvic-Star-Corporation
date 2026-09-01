@@ -165,7 +165,7 @@ export const B2BWholesalePage: React.FC<B2BWholesalePageProps> = ({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start animate-in fade-in">
           <div className="lg:col-span-6 space-y-6">
             <div className="space-y-2 font-mono">
-              <h2 className="text-2xl font-bold text-[#0B2838] font-sans">Join MEDTREND® Global Distributor Network</h2>
+              <h2 className="text-2xl font-bold text-[#0B2838] font-sans">Join {brandConfig.brandName} Global Distributor Network</h2>
               <p className="text-xs sm:text-sm text-[#355C75] leading-relaxed font-sans">
                 We are actively recruiting authorized regional distributors, surgical stockists, and hospital procurement partners in North America, Western Europe, and GCC territories.
               </p>

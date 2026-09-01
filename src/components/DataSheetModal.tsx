@@ -176,16 +176,16 @@ export const DataSheetModal: React.FC<DataSheetModalProps> = ({ isOpen, onClose,
                 Traceability & Marking
               </h4>
               <ul className="text-[11px] text-[#355C75] space-y-1">
-                <li>• Fiber laser etched with MEDTREND®, SKU, and lot barcode</li>
+                <li>• Fiber laser etched with {brandConfig.brandName}, SKU, and lot barcode</li>
                 <li>• Packaged in {product.packagingInfo}</li>
-                <li>• Manufacturing Origin: Sialkot, Pakistan (ISO 13485 Space)</li>
+                <li>• Manufacturing Origin: {brandConfig.origin} (ISO 13485 Space)</li>
               </ul>
             </div>
           </div>
 
           {/* Document Footer */}
-          <div className="pt-4 border-t border-[#B3E5FC] flex items-center justify-between text-[10px] text-[#62879F] font-mono">
-            <div>MEDTREND PVT. LTD. • SIALKOT • WWW.MEDTREND.COM</div>
+          <div className="pt-4 border-t border-[#B3E5FC] flex items-center justify-between text-[10px] text-[#62879F] font-mono uppercase">
+            <div>{brandConfig.companyName} • {brandConfig.origin} • {brandConfig.socialLinks?.website?.replace(/^https?:\/\//, '') || 'SARVICSTAR.COM'}</div>
             <div>STRICT CONFIDENTIAL MEDICAL SPECIFICATION</div>
           </div>
         </div>

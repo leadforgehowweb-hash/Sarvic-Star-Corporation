@@ -154,7 +154,7 @@ export const QualityCertificationsPage: React.FC<QualityCertificationsPageProps>
           <span>Regulatory Compliance Transparency Policy:</span>
         </div>
         <p className="leading-relaxed text-[#355C75] font-sans">
-          MEDTREND® maintains transparent documentation for all regulatory submissions. Factory audit reports, ISO 13485 QMS certifications, CE declarations of conformity, and FDA establishment identifiers are verified per active procurement contracts. We do not make unsubstantiated claims; all technical parameters are verified via independent accredited testing labs.
+          {brandConfig.brandName} maintains transparent documentation for all regulatory submissions. Factory audit reports, ISO 13485 QMS certifications, CE declarations of conformity, and FDA establishment identifiers are verified per active procurement contracts. We do not make unsubstantiated claims; all technical parameters are verified via independent accredited testing labs.
         </p>
       </div>
     </div>

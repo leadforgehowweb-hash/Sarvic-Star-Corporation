@@ -45,45 +45,45 @@ export interface BrandConfig {
 }
 
 export const INITIAL_BRAND_CONFIG: BrandConfig = {
-  brandName: DEFAULT_BRAND_DATA.brandName || 'MEDTREND®',
-  brandShortName: 'MEDTREND',
-  brandMonogram: 'M',
+  brandName: 'Sarvic Star Corporation',
+  brandShortName: 'SARVIC STAR',
+  brandMonogram: 'SSC',
   registeredMark: '®',
-  companyName: DEFAULT_BRAND_DATA.companyName || 'Medtrend Pvt. Ltd.',
-  fullLegalName: DEFAULT_BRAND_DATA.fullLegalName || 'Medtrend Pvt. Ltd. Surgical & Medical Instruments',
+  companyName: 'Sarvic Star Corporation',
+  fullLegalName: 'Sarvic Star Corporation Surgical & Medical Instruments',
   industrySubtitle: 'Surgical & Medical Instruments',
-  tagline: DEFAULT_BRAND_DATA.taglines?.primary || 'Precision You Can Trust.',
-  secondaryTagline: 'Precision in Every Instrument • Crafted for Care',
-  positioningStatement: DEFAULT_BRAND_DATA.positioningStatement || 'MEDTREND® is a Pakistan-based surgical and medical instruments brand delivering professionally manufactured instruments from Sialkot to customers worldwide.',
-  origin: DEFAULT_BRAND_DATA.origin || 'Sialkot, Pakistan',
-  primaryMarkets: ['United States', 'European Union', 'GCC Countries', 'Worldwide'],
+  tagline: 'Excellence in Surgical Craftsmanship.',
+  secondaryTagline: 'Precision Engineered Instruments • Trusted Globally',
+  positioningStatement: 'Sarvic Star Corporation is a premier manufacturer and international exporter of high-precision surgical, dental, orthopedic, and veterinary instruments crafted in Sialkot, Pakistan to strict international quality standards.',
+  origin: 'Sialkot, Pakistan',
+  primaryMarkets: ['United States', 'United Kingdom', 'European Union', 'GCC & Middle East', 'Worldwide'],
   contactInfo: {
-    primaryPhone: '+92 (52) 429-1800',
-    b2bDirectDeskPhone: '+92 (52) 429-1801',
-    whatsapp: '+92 300 4291800',
-    generalEmail: 'info@medtrend.com',
-    exportEmail: 'export@medtrendinstruments.com',
-    supportEmail: 'support@medtrend.com',
-    hqAddress: 'Small Industrial Estate, Sialkot 51310, Punjab, Pakistan',
+    primaryPhone: '+92 (52) 436-0500',
+    b2bDirectDeskPhone: '+92 300 6100500',
+    whatsapp: '+92 300 6100500',
+    generalEmail: 'info@sarvicstar.com',
+    exportEmail: 'export@sarvicstar.com',
+    supportEmail: 'support@sarvicstar.com',
+    hqAddress: 'Industrial Estate, Daska Road, Sialkot 51310, Punjab, Pakistan',
     cityState: 'Sialkot, Punjab 51310',
     country: 'Pakistan',
-    workingHours: 'Mon - Sat: 8:00 AM - 6:00 PM PKT (UTC+5)'
+    workingHours: 'Mon - Sat: 8:00 AM - 6:00 PM PKT'
   },
   logoConfig: {
     type: 'monogram',
     customImageUrl: '',
     logoDisplayMode: 'image_and_text',
-    logoShape: 'rounded',
+    logoShape: 'transparent',
     logoHeight: 44,
     accentGradientStart: '#0288D1',
-    accentGradientEnd: '#29B6F6'
+    accentGradientEnd: '#00B0FF'
   },
   socialLinks: {
-    website: 'https://medtrendinstruments.com',
-    linkedin: 'https://linkedin.com/company/medtrend',
-    facebook: 'https://facebook.com/medtrendinstruments',
-    instagram: 'https://instagram.com/medtrend.surgical',
-    twitter: 'https://twitter.com/medtrendmed'
+    website: 'https://sarvicstar.com',
+    linkedin: 'https://linkedin.com/company/sarvic-star',
+    facebook: 'https://facebook.com/sarvicstar',
+    instagram: 'https://instagram.com/sarvicstar',
+    twitter: 'https://twitter.com/sarvicstar'
   }
 };
 
@@ -134,8 +134,8 @@ export const BRAND_PRESETS: Record<string, { label: string; description: string;
       }
     }
   },
-  medtrend: {
-    label: 'MEDTREND® Surgical Instruments (Default)',
+  sarvic_star_default: {
+    label: 'Sarvic Star Corporation (Default)',
     description: 'Sialkot Manufacturing HQ, Precision German Metallurgy & Global Export',
     config: { ...INITIAL_BRAND_CONFIG }
   },
@@ -286,6 +286,26 @@ export const BrandProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       localStorage.setItem(STORAGE_KEY, JSON.stringify(brandConfig));
     } catch (e) {
       console.error('Failed to persist brand config:', e);
+    }
+
+    // Dynamically update browser tab title and meta tags
+    const cleanName = (brandConfig.brandName || 'Sarvic Star Corporation').replace(/[®™]/g, '').trim();
+    const registered = brandConfig.registeredMark || (/[®™]/.test(brandConfig.brandName) ? '®' : '');
+    const formattedTitle = `${cleanName}${registered ? registered : ''} | ${brandConfig.industrySubtitle || 'Surgical & Medical Instruments'}`;
+    
+    document.title = formattedTitle;
+
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc && brandConfig.positioningStatement) {
+      metaDesc.setAttribute('content', brandConfig.positioningStatement);
+    }
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) {
+      ogTitle.setAttribute('content', formattedTitle);
+    }
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc && brandConfig.positioningStatement) {
+      ogDesc.setAttribute('content', brandConfig.positioningStatement);
     }
   }, [brandConfig]);
 

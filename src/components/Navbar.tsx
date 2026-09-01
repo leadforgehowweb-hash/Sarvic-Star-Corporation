@@ -121,7 +121,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="flex items-center justify-between h-20 gap-4">
           {/* Logo Branding with Clean Medical Crest / Monogram / Image */}
           {(() => {
-            const cleanBrandName = (brandConfig.brandName || 'MEDTREND').replace(/[®™]/g, '').trim();
+            const cleanBrandName = (brandConfig.brandName || 'Sarvic Star Corporation').replace(/[®™]/g, '').trim();
             const registeredSymbol = brandConfig.registeredMark || (/[®™]/.test(brandConfig.brandName) ? '®' : '');
             const isCustomImg = brandConfig.logoConfig.type === 'custom_image' && Boolean(brandConfig.logoConfig.customImageUrl);
             const isImgOnly = isCustomImg && brandConfig.logoConfig.logoDisplayMode === 'image_only';

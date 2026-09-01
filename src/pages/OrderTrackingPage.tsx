@@ -3,6 +3,7 @@ import {
   Search, Truck, CheckCircle2, MapPin, Calendar, 
   Package, Clock, ArrowRight, ShieldCheck, FileText, Globe 
 } from 'lucide-react';
+import { useBrand } from '../context/BrandContext';
 
 interface OrderTrackingPageProps {
   initialCode?: string;
@@ -13,7 +14,8 @@ export const OrderTrackingPage: React.FC<OrderTrackingPageProps> = ({
   initialCode = '',
   onOpenRFQ
 }) => {
-  const [trackingCode, setTrackingCode] = useState(initialCode || 'MT-EXP-884912');
+  const { brandConfig } = useBrand();
+  const [trackingCode, setTrackingCode] = useState(initialCode || 'SSC-EXP-884912');
   const [searched, setSearched] = useState(true);
 
   const demoTimeline = [
@@ -27,7 +29,7 @@ export const OrderTrackingPage: React.FC<OrderTrackingPageProps> = ({
     {
       stage: 'CNC Micro-Milling & Ultrasonic Passivation',
       date: 'Aug 26, 2026 • 02:15 PM',
-      location: 'MEDTREND Cleanroom Facility, Sialkot',
+      location: `${brandConfig.brandName} Cleanroom Facility, Sialkot`,
       done: true,
       desc: 'ASTM A967 nitric acid bath completed with zero free-iron certification.'
     },
@@ -75,7 +77,7 @@ export const OrderTrackingPage: React.FC<OrderTrackingPageProps> = ({
         </h1>
 
         <p className="text-xs sm:text-sm text-[#355C75] max-w-2xl leading-relaxed font-sans">
-          Enter your MEDTREND® order tracking number or DHL air waybill code to check real-time factory dispatch, metallurgical passivation clearance, and flight milestones.
+          Enter your {brandConfig.brandName} order tracking number or DHL air waybill code to check real-time factory dispatch, metallurgical passivation clearance, and flight milestones.
         </p>
 
         {/* Search input */}

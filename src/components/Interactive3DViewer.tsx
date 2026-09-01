@@ -4,6 +4,7 @@ import {
   Maximize2, Minimize2, Eye, ShieldCheck, Download, RefreshCw, ZoomIn, ZoomOut, Zap,
   Film, Sliders, Check
 } from 'lucide-react';
+import { useBrand } from '../context/BrandContext';
 
 interface Interactive3DViewerProps {
   modelType?: 'forceps' | 'scissors' | 'needle_holder' | 'retractor' | 'scalpel' | 'bone_rongeur';
@@ -24,6 +25,7 @@ export const Interactive3DViewer: React.FC<Interactive3DViewerProps> = ({
   showCustomMarking = true,
   videoLoopUrl = '/3dslide1.mp4'
 }) => {
+  const { brandConfig } = useBrand();
   const [viewMode, setViewMode] = useState<'video' | 'cad'>('video');
   const [activeVideoUrl, setActiveVideoUrl] = useState<string>(videoLoopUrl || '/3dslide1.mp4');
   const [stageHeight, setStageHeight] = useState<'standard' | 'tall' | 'compact'>('standard');
@@ -38,7 +40,7 @@ export const Interactive3DViewer: React.FC<Interactive3DViewerProps> = ({
   const [isWireframe, setIsWireframe] = useState(false);
   const [isExploded, setIsExploded] = useState(false);
   const [activeHotspot, setActiveHotspot] = useState<string | null>(null);
-  const [laserMarkingText, setLaserMarkingText] = useState('MEDTREND® SIALKOT');
+  const [laserMarkingText, setLaserMarkingText] = useState(() => `${brandConfig.brandName.toUpperCase()} SIALKOT`);
   const [loopTime, setLoopTime] = useState(0);
   const [videoPlayState, setVideoPlayState] = useState(true);
   const [videoDuration, setVideoDuration] = useState(3.0);
