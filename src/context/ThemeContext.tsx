@@ -19,7 +19,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     root.classList.remove('dark');
     root.style.colorScheme = 'light';
     try {
-      localStorage.setItem('medtrend_theme', 'light');
+      localStorage.setItem('sarvicstar_theme', 'light');
     } catch (e) {
       console.error(e);
     }

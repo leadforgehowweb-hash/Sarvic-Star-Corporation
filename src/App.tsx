@@ -50,7 +50,7 @@ export default function App() {
   // E-Commerce Shopping Cart State with localStorage backing
   const [cart, setCart] = useState<CartItem[]>(() => {
     try {
-      const saved = localStorage.getItem('medtrend_cart');
+      const saved = localStorage.getItem('sarvicstar_cart');
       if (saved) return JSON.parse(saved);
     } catch (e) {
       console.error(e);
@@ -69,7 +69,7 @@ export default function App() {
 
   useEffect(() => {
     try {
-      localStorage.setItem('medtrend_cart', JSON.stringify(cart));
+      localStorage.setItem('sarvicstar_cart', JSON.stringify(cart));
     } catch (e) {
       console.error(e);
     }

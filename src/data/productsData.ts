@@ -674,7 +674,7 @@ export const PRODUCTS: Product[] = [
     has3DModel: true,
     model3DType: 'retractor',
     shortDesc: 'Self-retaining retractor with 3x4 sharp prongs for hands-free surgical wound exposure.',
-    fullDesc: 'The Medtrend Weitlaner Retractor holds back tissues securely, freeing up the surgeon and assistants. Features a smoothly calibrated self-retaining ratchet mechanism.',
+    fullDesc: 'The Sarvic Star Corporation Weitlaner Retractor holds back tissues securely, freeing up the surgeon and assistants. Features a smoothly calibrated self-retaining ratchet mechanism.',
     features: [
       'Self-retaining automatic lock frees hands',
       'Sharp prongs grip deep fascial margins',

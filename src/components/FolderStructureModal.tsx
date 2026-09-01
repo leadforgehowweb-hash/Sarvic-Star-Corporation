@@ -372,7 +372,7 @@ export const FolderStructureModal: React.FC<FolderStructureModalProps> = ({ isOp
 
         {/* Footer */}
         <div className="p-4 bg-[#F8FCFE] border-t border-[#B3E5FC] flex items-center justify-between text-xs text-[#355C75] font-mono">
-          <span>Medtrend Precision Instruments Asset Architecture v2.4</span>
+          <span>Sarvic Star Corporation Asset Architecture v2.4</span>
           <button
             onClick={onClose}
             className="px-4 py-2 bg-[#0288D1] hover:bg-[#0277BD] text-white font-bold rounded-xl font-mono text-xs transition-colors uppercase tracking-wider shadow-md shadow-[#0288D1]/25"

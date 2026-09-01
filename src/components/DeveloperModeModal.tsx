@@ -124,7 +124,7 @@ export const DeveloperModeModal: React.FC<DeveloperModeModalProps> = ({ isOpen, 
                   triggerSavedIndicator();
                 }}
                 className={`px-3 py-1.5 rounded-xl text-xs font-mono font-bold transition-all border ${
-                  brandConfig.brandShortName.toLowerCase().includes(key === 'howweb' ? 'howweb' : key === 'apex_oem' ? 'apex' : 'medtrend')
+                  brandConfig.brandShortName.toLowerCase().includes(key === 'howweb' ? 'howweb' : key === 'apex_oem' ? 'apex' : 'sarvic')
                     ? 'bg-[#0288D1] text-white border-[#0288D1] shadow-xs'
                     : 'bg-white text-[#0B2838] border-[#81D4FA] hover:bg-[#B3E5FC]/40'
                 }`}
@@ -307,7 +307,7 @@ export const DeveloperModeModal: React.FC<DeveloperModeModalProps> = ({ isOpen, 
                       updateBrandConfig({ fullLegalName: e.target.value, companyName: e.target.value });
                       triggerSavedIndicator();
                     }}
-                    placeholder="e.g. Medtrend Pvt. Ltd. Surgical & Medical Instruments"
+                    placeholder="e.g. Sarvic Star Corporation Surgical & Medical Instruments"
                     className="w-full p-3 rounded-xl border border-[#B3E5FC] bg-white text-[#0B2838] text-sm focus:border-[#0288D1] focus:ring-2 focus:ring-[#B3E5FC] outline-none transition-all shadow-xs"
                   />
                   <p className="text-[11px] text-[#355C75]">
@@ -985,7 +985,7 @@ export const DeveloperModeModal: React.FC<DeveloperModeModalProps> = ({ isOpen, 
                       });
                       triggerSavedIndicator();
                     }}
-                    placeholder="info@medtrend.com"
+                    placeholder="info@sarvicstar.com"
                     className="w-full p-3 rounded-xl border border-[#B3E5FC] bg-white text-[#0B2838] font-mono text-sm focus:border-[#0288D1] focus:ring-2 focus:ring-[#B3E5FC] outline-none shadow-xs"
                   />
                 </div>
@@ -1005,7 +1005,7 @@ export const DeveloperModeModal: React.FC<DeveloperModeModalProps> = ({ isOpen, 
                       });
                       triggerSavedIndicator();
                     }}
-                    placeholder="export@medtrendinstruments.com"
+                    placeholder="export@sarvicstar.com"
                     className="w-full p-3 rounded-xl border border-[#B3E5FC] bg-white text-[#0B2838] font-mono text-sm focus:border-[#0288D1] focus:ring-2 focus:ring-[#B3E5FC] outline-none shadow-xs"
                   />
                 </div>
@@ -1025,7 +1025,7 @@ export const DeveloperModeModal: React.FC<DeveloperModeModalProps> = ({ isOpen, 
                       });
                       triggerSavedIndicator();
                     }}
-                    placeholder="support@medtrend.com"
+                    placeholder="support@sarvicstar.com"
                     className="w-full p-3 rounded-xl border border-[#B3E5FC] bg-white text-[#0B2838] font-mono text-sm focus:border-[#0288D1] focus:ring-2 focus:ring-[#B3E5FC] outline-none shadow-xs"
                   />
                 </div>
