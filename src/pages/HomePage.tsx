@@ -640,30 +640,44 @@ export const HomePage: React.FC<HomePageProps> = ({
                     <div className="relative w-full h-36 sm:h-44 bg-black flex items-center justify-center overflow-hidden">
                       {/* Ambient blur for portrait */}
                       {v.orientation === 'portrait' && (
-                        <div className="absolute inset-0 opacity-25 blur-lg scale-125 pointer-events-none">
+                        <div className="absolute inset-0 opacity-30 blur-xl scale-125 pointer-events-none">
                           <video
-                            src={v.src}
+                            key={`blur-${v.id}-${v.src}`}
                             autoPlay
                             loop
                             muted
                             playsInline
+                            preload="auto"
+                            onCanPlay={(e) => { e.currentTarget.play().catch(() => {}); }}
                             className="w-full h-full object-cover"
-                          />
+                          >
+                            <source src={v.src} type="video/mp4" />
+                            <source src={`/images/3d-models/${v.src.replace(/^\//, '')}`} type="video/mp4" />
+                            <source src={`/${v.src.replace('SSC-', 'MT-').replace(/^\//, '')}`} type="video/mp4" />
+                          </video>
                         </div>
                       )}
 
                       <video
-                        src={v.src}
+                        key={`main-${v.id}-${v.src}`}
                         autoPlay
                         loop
                         muted
                         playsInline
+                        preload="auto"
+                        onCanPlay={(e) => { e.currentTarget.play().catch(() => {}); }}
+                        onLoadedData={(e) => { e.currentTarget.play().catch(() => {}); }}
+                        onLoadedMetadata={(e) => { e.currentTarget.play().catch(() => {}); }}
                         className={`${
                           v.orientation === 'portrait'
-                            ? 'h-full max-h-[140px] sm:max-h-[170px] w-auto aspect-[9/16] object-contain rounded-lg shadow-lg'
+                            ? 'h-full max-h-[140px] sm:max-h-[170px] w-auto aspect-[9/16] object-contain rounded-lg shadow-lg relative z-10'
                             : 'w-full h-full object-cover object-center filter contrast-[1.05]'
                         } transition-transform duration-500 group-hover:scale-105`}
-                      />
+                      >
+                        <source src={v.src} type="video/mp4" />
+                        <source src={`/images/3d-models/${v.src.replace(/^\//, '')}`} type="video/mp4" />
+                        <source src={`/${v.src.replace('SSC-', 'MT-').replace(/^\//, '')}`} type="video/mp4" />
+                      </video>
 
                       {/* Hover Overlay with Fullscreen Button */}
                       <button
