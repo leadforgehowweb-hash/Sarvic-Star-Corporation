@@ -133,97 +133,6 @@ export const BRAND_PRESETS: Record<string, { label: string; description: string;
         twitter: 'https://twitter.com/sarvicstar'
       }
     }
-  },
-  sarvic_star_default: {
-    label: 'Sarvic Star Corporation (Default)',
-    description: 'Sialkot Manufacturing HQ, Precision German Metallurgy & Global Export',
-    config: { ...INITIAL_BRAND_CONFIG }
-  },
-  howweb: {
-    label: 'HowWeb Digital Solutions & Tech',
-    description: 'Modern Web, Software & Digital Engineering Agency Profile',
-    config: {
-      brandName: 'HOWWEB',
-      brandShortName: 'HOWWEB',
-      brandMonogram: 'HW',
-      registeredMark: '™',
-      companyName: 'HowWeb Technologies Pvt. Ltd.',
-      fullLegalName: 'HowWeb Technologies & Digital Solutions International',
-      industrySubtitle: 'Digital Platforms & Web Engineering',
-      tagline: 'Empowering Digital Innovation Worldwide.',
-      secondaryTagline: 'Engineered for Performance • Built for Scale',
-      positioningStatement: 'HowWeb delivers state-of-the-art web architectures, digital enterprise applications, and bespoke technological solutions tailored for global brands and modern commerce.',
-      origin: 'Lahore & Sialkot, Pakistan',
-      primaryMarkets: ['Global', 'North America', 'United Kingdom', 'Middle East', 'Asia Pacific'],
-      contactInfo: {
-        primaryPhone: '+92 (42) 358-9900',
-        b2bDirectDeskPhone: '+92 300 8884699',
-        whatsapp: '+92 300 8884699',
-        generalEmail: 'contact@howweb.io',
-        exportEmail: 'solutions@howweb.io',
-        supportEmail: 'helpdesk@howweb.io',
-        hqAddress: 'Suite 402, IT Tower, Hali Road, Gulberg III, Lahore, Pakistan',
-        cityState: 'Lahore / Sialkot, Punjab',
-        country: 'Pakistan',
-        workingHours: 'Mon - Fri: 9:00 AM - 7:00 PM PKT (UTC+5)'
-      },
-      logoConfig: {
-        type: 'monogram',
-        customImageUrl: '',
-        accentGradientStart: '#0288D1',
-        accentGradientEnd: '#00B0FF'
-      },
-      socialLinks: {
-        website: 'https://howweb.io',
-        linkedin: 'https://linkedin.com/company/howweb-tech',
-        facebook: 'https://facebook.com/howwebtech',
-        instagram: 'https://instagram.com/howweb.official',
-        twitter: 'https://twitter.com/howwebio'
-      }
-    }
-  },
-  apex_oem: {
-    label: 'APEX Healthcare OEM & Precision Lab',
-    description: 'Medical Device Manufacturing & Hospital Supply Profile',
-    config: {
-      brandName: 'APEX HEALTH',
-      brandShortName: 'APEX',
-      brandMonogram: 'A',
-      registeredMark: '®',
-      companyName: 'Apex Precision Medical Corp.',
-      fullLegalName: 'Apex Precision Medical Instruments & Titanium Forging Corp.',
-      industrySubtitle: 'Advanced Surgical & Dental Instruments',
-      tagline: 'Engineering Healthcare Excellence.',
-      secondaryTagline: 'Uncompromising Quality • Sterile Precision',
-      positioningStatement: 'Apex Precision Medical Corp. provides high-specification surgical instruments, titanium implants, and turnkey OEM private label manufacturing to premier medical networks.',
-      origin: 'Sialkot & Frankfurt',
-      primaryMarkets: ['United States', 'Germany', 'Japan', 'United Kingdom', 'Australia'],
-      contactInfo: {
-        primaryPhone: '+92 (52) 459-7700',
-        b2bDirectDeskPhone: '+92 (52) 459-7701',
-        whatsapp: '+92 321 7788990',
-        generalEmail: 'info@apexmedicalcorp.com',
-        exportEmail: 'procurement@apexmedicalcorp.com',
-        supportEmail: 'service@apexmedicalcorp.com',
-        hqAddress: 'Plot 18-B, Export Processing Zone, Sambrial Road, Sialkot, Pakistan',
-        cityState: 'Sialkot EPZ, Punjab',
-        country: 'Pakistan',
-        workingHours: 'Mon - Sat: 8:30 AM - 5:30 PM PKT'
-      },
-      logoConfig: {
-        type: 'monogram',
-        customImageUrl: '',
-        accentGradientStart: '#01579B',
-        accentGradientEnd: '#0288D1'
-      },
-      socialLinks: {
-        website: 'https://apexmedicalcorp.com',
-        linkedin: 'https://linkedin.com/company/apex-medical-corp',
-        facebook: 'https://facebook.com/apexmedical',
-        instagram: 'https://instagram.com/apex.medical',
-        twitter: 'https://twitter.com/apexmedicalcorp'
-      }
-    }
   }
 };
 
@@ -231,17 +140,12 @@ interface BrandContextType {
   brandConfig: BrandConfig;
   updateBrandConfig: (partial: Partial<BrandConfig>) => void;
   resetToDefaults: () => void;
-  loadPreset: (presetKey: string) => void;
-  isDevModeOpen: boolean;
-  setIsDevModeOpen: (open: boolean) => void;
-  toggleDevMode: () => void;
   exportConfigJson: () => string;
-  importConfigJson: (json: string) => boolean;
 }
 
 const BrandContext = createContext<BrandContextType | undefined>(undefined);
 
-const STORAGE_KEY = 'howweb_brand_master_config';
+const STORAGE_KEY = 'sarvicstar_master_config';
 
 export const BrandProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [brandConfig, setBrandConfig] = useState<BrandConfig>(() => {
@@ -282,8 +186,6 @@ export const BrandProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     return INITIAL_BRAND_CONFIG;
   });
 
-  const [isDevModeOpen, setIsDevModeOpen] = useState(false);
-
   // Sync to localStorage whenever brandConfig changes
   useEffect(() => {
     try {
@@ -313,18 +215,6 @@ export const BrandProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     }
   }, [brandConfig]);
 
-  // Global Keyboard Shortcut: Ctrl + Shift + D (or Cmd + Shift + D)
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'D' || e.key === 'd')) {
-        e.preventDefault();
-        setIsDevModeOpen((prev) => !prev);
-      }
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
-
   const updateBrandConfig = (partial: Partial<BrandConfig>) => {
     setBrandConfig((prev) => ({
       ...prev,
@@ -345,37 +235,14 @@ export const BrandProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     setBrandConfig(INITIAL_BRAND_CONFIG);
     try {
       localStorage.removeItem(STORAGE_KEY);
+      localStorage.removeItem('howweb_brand_master_config');
     } catch (e) {
       console.error(e);
     }
   };
 
-  const loadPreset = (presetKey: string) => {
-    const preset = BRAND_PRESETS[presetKey];
-    if (preset) {
-      setBrandConfig(preset.config);
-    }
-  };
-
-  const toggleDevMode = () => {
-    setIsDevModeOpen((prev) => !prev);
-  };
-
   const exportConfigJson = () => {
     return JSON.stringify(brandConfig, null, 2);
-  };
-
-  const importConfigJson = (json: string): boolean => {
-    try {
-      const parsed = JSON.parse(json);
-      if (parsed && typeof parsed === 'object') {
-        updateBrandConfig(parsed);
-        return true;
-      }
-    } catch (e) {
-      console.error('Invalid JSON imported:', e);
-    }
-    return false;
   };
 
   return (
@@ -384,12 +251,7 @@ export const BrandProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         brandConfig,
         updateBrandConfig,
         resetToDefaults,
-        loadPreset,
-        isDevModeOpen,
-        setIsDevModeOpen,
-        toggleDevMode,
-        exportConfigJson,
-        importConfigJson
+        exportConfigJson
       }}
     >
       {children}

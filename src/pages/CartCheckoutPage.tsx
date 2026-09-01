@@ -44,7 +44,7 @@ export const CartCheckoutPage: React.FC<CartCheckoutPageProps> = ({
 
   const handlePlaceOrder = (e: React.FormEvent) => {
     e.preventDefault();
-    const generatedCode = 'MT-EXP-' + Math.floor(100000 + Math.random() * 900000);
+    const generatedCode = 'SSC-EXP-' + Math.floor(100000 + Math.random() * 900000);
     setOrderTrackingCode(generatedCode);
     setStep('success');
     confetti({

@@ -133,11 +133,11 @@ export const ImageManagerModal: React.FC<ImageManagerModalProps> = ({
                 onChange={(e) => handleFieldChange('modelType', e.target.value)}
                 className="w-full p-2 rounded-xl border border-[#B3E5FC] text-xs focus:outline-none focus:border-[#0288D1] text-[#0B2838] bg-[#F8FCFE] focus:bg-white"
               >
-                <option value="forceps">Kelly Forceps (MT-HF-001)</option>
-                <option value="scissors">Metzenbaum Scissors (MT-SC-004)</option>
-                <option value="needle_holder">Mayo-Hegar Needle Holder (MT-NH-012)</option>
-                <option value="retractor">Weitlaner Retractor (MT-RT-008)</option>
-                <option value="scalpel">Bard-Parker Scalpel (MT-BP-002)</option>
+                <option value="forceps">Kelly Forceps (SSC-HF-001)</option>
+                <option value="scissors">Metzenbaum Scissors (SSC-SC-004)</option>
+                <option value="needle_holder">Mayo-Hegar Needle Holder (SSC-NH-012)</option>
+                <option value="retractor">Weitlaner Retractor (SSC-RT-008)</option>
+                <option value="scalpel">Bard-Parker Scalpel (SSC-BP-002)</option>
               </select>
             </div>
           </div>

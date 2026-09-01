@@ -253,8 +253,8 @@ export const FolderStructureModal: React.FC<FolderStructureModalProps> = ({ isOp
                       </div>
                       {expandedFolders['3d-models'] && (
                         <div className="pl-6 space-y-1 text-[#355C75] text-[11px]">
-                          <div className="flex items-center gap-2 text-[#0B2838]"><FileCode className="w-3.5 h-3.5 text-[#0288D1]" /> MT-HF-001-loop.mp4</div>
-                          <div className="flex items-center gap-2 text-[#0B2838]"><FileCode className="w-3.5 h-3.5 text-[#0288D1]" /> MT-HF-002-loop.mp4</div>
+                          <div className="flex items-center gap-2 text-[#0B2838]"><FileCode className="w-3.5 h-3.5 text-[#0288D1]" /> SSC-HF-001-loop.mp4</div>
+                          <div className="flex items-center gap-2 text-[#0B2838]"><FileCode className="w-3.5 h-3.5 text-[#0288D1]" /> SSC-HF-002-loop.mp4</div>
                           <div className="flex items-center gap-2 text-[#0B2838]"><FileCode className="w-3.5 h-3.5 text-[#0288D1]" /> forceps-cad-assembly.glb</div>
                         </div>
                       )}
@@ -321,15 +321,15 @@ export const FolderStructureModal: React.FC<FolderStructureModalProps> = ({ isOp
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs font-mono">
                   <div className="p-2.5 rounded-lg bg-white border border-[#B3E5FC]">
                     <p className="text-[#62879F] text-[9px] uppercase">Product Code</p>
-                    <p className="text-[#0288D1] font-bold">MT-[PREFIX]-[001].jpg</p>
+                    <p className="text-[#0288D1] font-bold">SSC-[PREFIX]-[001].jpg</p>
                   </div>
                   <div className="p-2.5 rounded-lg bg-white border border-[#B3E5FC]">
                     <p className="text-[#62879F] text-[9px] uppercase">Multiple Angles</p>
-                    <p className="text-[#0B2838] font-bold">MT-HF-001_angle1.jpg</p>
+                    <p className="text-[#0B2838] font-bold">SSC-HF-001_angle1.jpg</p>
                   </div>
                   <div className="p-2.5 rounded-lg bg-white border border-[#B3E5FC]">
                     <p className="text-[#62879F] text-[9px] uppercase">Packaging View</p>
-                    <p className="text-[#0B2838] font-bold">MT-HF-001_package.jpg</p>
+                    <p className="text-[#0B2838] font-bold">SSC-HF-001_package.jpg</p>
                   </div>
                 </div>
               </div>

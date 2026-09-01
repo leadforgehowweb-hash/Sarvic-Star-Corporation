@@ -18,8 +18,8 @@ interface Interactive3DViewerProps {
 
 export const Interactive3DViewer: React.FC<Interactive3DViewerProps> = ({
   modelType = 'forceps',
-  productName = 'Halsted Mosquito Forceps (MT-HF-001)',
-  productCode = 'MT-HF-001',
+  productName = 'Halsted Mosquito Forceps (SSC-HF-001)',
+  productCode = 'SSC-HF-001',
   initialFinish = 'German Satin',
   heightClass = 'h-[520px] md:h-[600px]',
   showCustomMarking = true,
@@ -469,10 +469,10 @@ export const Interactive3DViewer: React.FC<Interactive3DViewerProps> = ({
 
   const getCurrentInstrumentTitle = () => {
     if (viewMode === 'cad') return productName;
-    if (activeVideoUrl === '/3dslide1.mp4') return 'Halsted Mosquito Forceps (MT-HF-001)';
-    if (activeVideoUrl === '/3dslide2.mp4') return 'Adson Micro Tissue Tweezers (MT-DS-019)';
-    if (activeVideoUrl.includes('MT-HF-002')) return 'Metzenbaum TC Scissors (MT-SC-004)';
-    if (activeVideoUrl.includes('MT-HF-001')) return 'Scalpel Knurled Handle (MT-SH-001)';
+    if (activeVideoUrl === '/3dslide1.mp4') return 'Halsted Mosquito Forceps (SSC-HF-001)';
+    if (activeVideoUrl === '/3dslide2.mp4') return 'Adson Micro Tissue Tweezers (SSC-DS-019)';
+    if (activeVideoUrl.includes('SSC-HF-002')) return 'Metzenbaum TC Scissors (SSC-SC-004)';
+    if (activeVideoUrl.includes('SSC-HF-001')) return 'Scalpel Knurled Handle (SSC-SH-001)';
     return productName;
   };
 
@@ -536,12 +536,12 @@ export const Interactive3DViewer: React.FC<Interactive3DViewerProps> = ({
             </button>
             <button
               onClick={() => {
-                setActiveVideoUrl('/images/3d-models/MT-HF-002-loop.mp4');
+                setActiveVideoUrl('/images/3d-models/SSC-HF-002-loop.mp4');
                 setViewMode('video');
                 setVideoPlayState(true);
               }}
               className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 ${
-                (activeVideoUrl.includes('MT-HF-002') || activeVideoUrl === '/MT-HF-002-loop.mp4') && viewMode === 'video'
+                (activeVideoUrl.includes('SSC-HF-002') || activeVideoUrl === '/SSC-HF-002-loop.mp4') && viewMode === 'video'
                   ? 'bg-[#0288D1] text-white font-bold shadow-xs'
                   : 'text-[#355C75] hover:text-[#0B2838]'
               }`}
@@ -552,12 +552,12 @@ export const Interactive3DViewer: React.FC<Interactive3DViewerProps> = ({
             </button>
             <button
               onClick={() => {
-                setActiveVideoUrl('/images/3d-models/MT-HF-001-loop.mp4');
+                setActiveVideoUrl('/images/3d-models/SSC-HF-001-loop.mp4');
                 setViewMode('video');
                 setVideoPlayState(true);
               }}
               className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 ${
-                (activeVideoUrl.includes('MT-HF-001') || activeVideoUrl === '/MT-HF-001-loop.mp4') && viewMode === 'video'
+                (activeVideoUrl.includes('SSC-HF-001') || activeVideoUrl === '/SSC-HF-001-loop.mp4') && viewMode === 'video'
                   ? 'bg-[#0288D1] text-white font-bold shadow-xs'
                   : 'text-[#355C75] hover:text-[#0B2838]'
               }`}
@@ -810,7 +810,7 @@ export const Interactive3DViewer: React.FC<Interactive3DViewerProps> = ({
                 className="px-3 py-1.5 text-xs bg-white border border-[#B3E5FC] rounded-xl text-[#0B2838] font-mono focus:outline-none focus:border-[#0288D1] w-full md:w-56 shadow-xs"
               />
               <div className="text-[9px] text-[#62879F] font-mono shrink-0">
-                MT-LASER-ETCH
+                SSC-LASER-ETCH
               </div>
             </div>
           </div>

@@ -15,7 +15,7 @@ export const BrandGuidelinesPage: React.FC<BrandGuidelinesPageProps> = ({
   onOpenFolderGuide,
   onOpenImageManager
 }) => {
-  const { brandConfig, setIsDevModeOpen } = useBrand();
+  const { brandConfig } = useBrand();
   const [activeCategory, setActiveCategory] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
 
@@ -55,12 +55,6 @@ export const BrandGuidelinesPage: React.FC<BrandGuidelinesPageProps> = ({
             className="px-5 py-2.5 bg-[#0288D1] hover:bg-[#0277BD] text-white font-bold rounded-xl text-xs flex items-center gap-2 transition-colors uppercase tracking-wider shadow-md shadow-[#0288D1]/25"
           >
             <Folder className="w-4 h-4 text-[#B3E5FC]" /> Open Folder Guide
-          </button>
-          <button
-            onClick={() => setIsDevModeOpen(true)}
-            className="px-5 py-2.5 bg-[#E1F5FE] hover:bg-[#B3E5FC] text-[#01579B] font-bold rounded-xl text-xs border border-[#81D4FA] transition-colors flex items-center gap-2 shadow-xs uppercase tracking-wider"
-          >
-            <Sliders className="w-4 h-4 text-[#0288D1]" /> ⚙️ Open Developer Studio
           </button>
           <button
             onClick={onOpenImageManager}

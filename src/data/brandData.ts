@@ -53,10 +53,10 @@ export const BRAND_CONFIG = {
         purpose: 'Main catalog structure. Any main folder here automatically acts as a Main Category, and sub-folders act as Sub-Categories.',
         namingConvention: 'Our Products/[Main Category]/[Sub Category]/[product-code].jpg',
         examples: [
-          'Our Products/General Surgery/Forceps & Clamps/MT-HF-001.jpg',
-          'Our Products/General Surgery/Surgical Scissors/MT-SC-004.jpg',
-          'Our Products/Dental Instruments/Extraction Forceps/MT-DS-019.jpg',
-          'Our Products/Orthopedic Instruments/Bone Ronguers/MT-OR-022.jpg'
+          'Our Products/General Surgery/Forceps & Clamps/SSC-HF-001.jpg',
+          'Our Products/General Surgery/Surgical Scissors/SSC-SC-004.jpg',
+          'Our Products/Dental Instruments/Extraction Forceps/SSC-DS-019.jpg',
+          'Our Products/Orthopedic Instruments/Bone Ronguers/SSC-OR-022.jpg'
         ],
         howToChange: 'Add or modify images inside the corresponding category and subcategory folder paths.'
       },
@@ -86,7 +86,7 @@ export const DEFAULT_HERO_SLIDES: HeroSlide[] = [
     secondaryCtaText: 'Request B2B Quote',
     secondaryCtaLink: '/b2b-wholesale',
     accentColor: '#0288D1',
-    previewCode: 'MT-HF-001',
+    previewCode: 'SSC-HF-001',
     modelType: 'forceps',
     highlights: [
       'Drop-forged AISI 420 surgical steel',
@@ -114,7 +114,7 @@ export const DEFAULT_HERO_SLIDES: HeroSlide[] = [
     secondaryCtaText: 'Download Spec Sheets',
     secondaryCtaLink: '/catalog-datasheets',
     accentColor: '#01579B',
-    previewCode: 'MT-SC-004',
+    previewCode: 'SSC-SC-004',
     modelType: 'scissors',
     highlights: [
       'Gold-plated ring handles denoting TC inserts',
@@ -142,7 +142,7 @@ export const DEFAULT_HERO_SLIDES: HeroSlide[] = [
     secondaryCtaText: 'Brand Guidelines',
     secondaryCtaLink: '/brand-guidelines',
     accentColor: '#0288D1',
-    previewCode: 'MT-NH-012',
+    previewCode: 'SSC-NH-012',
     modelType: 'needle_holder',
     highlights: [
       'Free high-definition fiber laser logo marking',

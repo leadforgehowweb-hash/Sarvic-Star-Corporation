@@ -1,10 +1,10 @@
 export interface Product {
   id: string;
-  code: string; // e.g. "MT-HF-001"
+  code: string; // e.g. "SSC-HF-001"
   name: string;
   category: string; // Main Folder (e.g. "General Surgery")
   subCategory: string; // Sub Folder (e.g. "Forceps & Clamps")
-  folderPath: string; // "Our Products/General Surgery/Forceps & Clamps/MT-HF-001"
+  folderPath: string; // "Our Products/General Surgery/Forceps & Clamps/SSC-HF-001"
   price: number;
   wholesalePriceTiers: { minQty: number; price: number }[];
   rating: number;

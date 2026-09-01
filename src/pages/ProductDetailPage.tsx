@@ -148,7 +148,7 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({
                 productCode={product.code}
                 initialFinish={selectedFinish}
                 heightClass="h-96 sm:h-[480px]"
-                videoLoopUrl={product.videoLoopUrl || '/images/3d-models/MT-HF-002-loop.mp4'}
+                videoLoopUrl={product.videoLoopUrl || '/images/3d-models/SSC-HF-002-loop.mp4'}
               />
               <p className="text-[11px] text-[#355C75] text-center font-mono">
                 Supports real 360° studio video loops, mouse scrubbing, CAD wireframes, and live shank laser engraving preview.

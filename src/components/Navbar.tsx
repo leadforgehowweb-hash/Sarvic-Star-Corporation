@@ -14,7 +14,6 @@ interface NavbarProps {
   onOpenFolderGuide: () => void;
   onOpenImageManager: () => void;
   onOpenRFQ: () => void;
-  onOpenDeveloperMode?: () => void;
   selectedCurrency?: string;
   onCurrencyChange?: (currency: string) => void;
 }
@@ -27,7 +26,6 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenFolderGuide,
   onOpenImageManager,
   onOpenRFQ,
-  onOpenDeveloperMode,
   selectedCurrency = 'USD',
   onCurrencyChange
 }) => {
@@ -76,27 +74,6 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           <div className="flex items-center gap-3">
-            {/* Folder Structure & Asset Guide Quick Trigger */}
-            <button
-              onClick={onOpenFolderGuide}
-              className="flex items-center gap-1.5 text-[#0288D1] hover:text-[#01579B] bg-white px-2.5 py-0.5 rounded-md border border-[#81D4FA] transition-colors font-mono text-[10px] shadow-xs"
-            >
-              <Folder className="w-3 h-3 text-[#0288D1]" />
-              <span>Asset & Folder Guide</span>
-            </button>
-
-            {/* Hidden Developer Mode Trigger */}
-            {onOpenDeveloperMode && (
-              <button
-                onClick={onOpenDeveloperMode}
-                className="flex items-center gap-1.5 text-[#01579B] hover:text-[#0288D1] bg-white hover:bg-[#E1F5FE] px-2 py-0.5 rounded-md border border-[#81D4FA] transition-colors font-mono text-[10px] shadow-xs"
-                title="Open Developer Mode (Ctrl + Shift + D)"
-              >
-                <Sliders className="w-3 h-3 text-[#0288D1]" />
-                <span className="font-bold">Dev Mode</span>
-              </button>
-            )}
-
             {/* Currency Selector */}
             <div className="flex items-center gap-1">
               <Globe className="w-3 h-3 text-[#0288D1]" />
@@ -211,7 +188,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   setIsSearchOpen(true);
                 }}
                 onFocus={() => setIsSearchOpen(true)}
-                placeholder="Search instrument code (e.g. MT-HF-001) or name..."
+                placeholder="Search instrument code (e.g. SSC-HF-001) or name..."
                 className="w-full pl-10 pr-4 py-2 text-xs bg-[#F4FAFD] hover:bg-[#E1F5FE] focus:bg-white border border-[#B3E5FC] rounded-xl focus:outline-none focus:border-[#0288D1] text-[#0B2838] placeholder-[#62879F] font-mono transition-all shadow-xs"
               />
               {searchQuery && (
@@ -403,7 +380,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search code MT-*"
+              placeholder="Search code SSC-*"
               className="w-full pl-9 pr-3 py-2 text-xs bg-white rounded-xl border border-[#B3E5FC] text-[#0B2838] font-mono"
             />
           </div>

@@ -75,7 +75,7 @@ export const CatalogDataSheetsPage: React.FC<CatalogDataSheetsPageProps> = ({
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search by code (e.g. MT-SC-004) or instrument name..."
+              placeholder="Search by code (e.g. SSC-SC-004) or instrument name..."
               className="w-full pl-10 pr-4 py-2.5 text-xs bg-[#F4FAFD] focus:bg-white rounded-xl border border-[#B3E5FC] text-[#0B2838] focus:border-[#0288D1] focus:outline-none"
             />
           </div>

@@ -10,14 +10,12 @@ interface FooterProps {
   onNavigate: (tab: string, productId?: string, categorySlug?: string) => void;
   onOpenFolderGuide: () => void;
   onOpenRFQ: () => void;
-  onOpenDeveloperMode?: () => void;
 }
 
 export const Footer: React.FC<FooterProps> = ({
   onNavigate,
   onOpenFolderGuide,
-  onOpenRFQ,
-  onOpenDeveloperMode
+  onOpenRFQ
 }) => {
   const { brandConfig } = useBrand();
 
@@ -212,18 +210,18 @@ export const Footer: React.FC<FooterProps> = ({
             </ul>
           </div>
 
-          {/* Developer & Asset System */}
+          {/* Useful Quick Links & System */}
           <div className="space-y-3">
-            <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#01579B]">System Architecture</h4>
+            <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#01579B]">Company & Catalog</h4>
             <ul className="space-y-2 text-xs text-[#355C75]">
               <li>
-                <button onClick={onOpenFolderGuide} className="hover:text-[#0288D1] transition-colors text-[#0288D1] font-mono text-[11px] flex items-center gap-1 font-bold">
-                  Folder Structure Specs
+                <button onClick={() => onNavigate('products')} className="hover:text-[#0288D1] transition-colors">
+                  Full Instruments Catalog
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('brand-guidelines')} className="hover:text-[#0288D1] transition-colors">
-                  Brand Guidelines Manual
+                <button onClick={() => onNavigate('quality-certifications')} className="hover:text-[#0288D1] transition-colors">
+                  Quality & CE Declarations
                 </button>
               </li>
               <li>
@@ -231,17 +229,11 @@ export const Footer: React.FC<FooterProps> = ({
                   {brandConfig.brandShortName} Heritage & Story
                 </button>
               </li>
-              {onOpenDeveloperMode && (
-                <li>
-                  <button 
-                    onClick={onOpenDeveloperMode} 
-                    className="text-[#01579B] hover:text-[#0288D1] font-mono font-bold flex items-center gap-1.5 bg-[#E1F5FE] px-2 py-1 rounded-lg border border-[#81D4FA] transition-colors"
-                  >
-                    <Sliders className="w-3.5 h-3.5 text-[#0288D1]" />
-                    <span>⚙️ Developer Mode (Ctrl+Shift+D)</span>
-                  </button>
-                </li>
-              )}
+              <li>
+                <button onClick={onOpenRFQ} className="hover:text-[#0288D1] transition-colors text-[#0288D1] font-semibold">
+                  Request B2B Quotation
+                </button>
+              </li>
             </ul>
 
             {/* Newsletter */}
@@ -250,7 +242,7 @@ export const Footer: React.FC<FooterProps> = ({
               <div className="flex">
                 <input
                   type="email"
-                  placeholder="contact@enterprise.com"
+                  placeholder="contact@hospital.com"
                   className="w-full bg-white border border-[#B3E5FC] rounded-l-xl px-2.5 py-1.5 text-xs text-[#0B2838] focus:outline-none focus:border-[#0288D1] font-mono placeholder-[#62879F]"
                 />
                 <button className="bg-[#0288D1] hover:bg-[#0277BD] text-white px-3 py-1.5 rounded-r-xl font-bold text-xs uppercase tracking-wider transition-colors shadow-xs">
@@ -267,14 +259,9 @@ export const Footer: React.FC<FooterProps> = ({
             <strong className="text-[#0B2838]">Legal & Commercial Entity:</strong> {brandConfig.fullLegalName} ({brandConfig.origin}). All instruments and platforms are delivered in accordance with strict international specifications. Direct correspondence via {brandConfig.contactInfo.generalEmail} or phone {brandConfig.contactInfo.primaryPhone}.
           </p>
           <div className="flex flex-wrap items-center justify-between gap-4 pt-3 border-t border-[#B3E5FC]/70 text-[9px] uppercase tracking-[0.2em] text-[#355C75] font-mono">
-            <button 
-              onClick={onOpenDeveloperMode}
-              className="text-left hover:text-[#0288D1] transition-colors flex items-center gap-1.5"
-              title="Click to open Developer Mode"
-            >
-              <span>System Status: <strong className="text-[#0288D1] font-bold">Nominal // Active</strong></span>
-              <span className="text-[9px] text-[#0288D1] bg-[#E1F5FE] px-1.5 py-0.5 rounded border border-[#81D4FA]">DEV CONFIG</span>
-            </button>
+            <div className="flex items-center gap-1.5">
+              <span>System Status: <strong className="text-[#0288D1] font-bold">Verified Production // Active</strong></span>
+            </div>
             <div>© {new Date().getFullYear()} {brandConfig.fullLegalName.toUpperCase()}</div>
             <div>Origin: {brandConfig.origin.toUpperCase()}</div>
           </div>

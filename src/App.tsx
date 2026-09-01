@@ -11,7 +11,6 @@ import { DataSheetModal } from './components/DataSheetModal';
 import { RFQModal } from './components/RFQModal';
 import { FolderStructureModal } from './components/FolderStructureModal';
 import { ImageManagerModal } from './components/ImageManagerModal';
-import { DeveloperModeModal } from './components/DeveloperModeModal';
 import { useBrand } from './context/BrandContext';
 
 // Dedicated Separate Modular Pages
@@ -28,13 +27,13 @@ import { OrderTrackingPage } from './pages/OrderTrackingPage';
 import { BrandGuidelinesPage } from './pages/BrandGuidelinesPage';
 
 export default function App() {
-  const { isDevModeOpen, setIsDevModeOpen } = useBrand();
+  const { brandConfig } = useBrand();
 
   // Navigation Routing State
   const [activeTab, setActiveTab] = useState<string>('home');
   const [selectedProductId, setSelectedProductId] = useState<string | null>(null);
   const [selectedCategorySlug, setSelectedCategorySlug] = useState<string | undefined>(undefined);
-  const [trackingSearchCode, setTrackingSearchCode] = useState<string>('MT-EXP-884912');
+  const [trackingSearchCode, setTrackingSearchCode] = useState<string>('SSC-EXP-884912');
 
   // Hero Slides Dynamic Configuration
   const [heroSlides, setHeroSlides] = useState<HeroSlide[]>(DEFAULT_HERO_SLIDES);
@@ -161,7 +160,6 @@ export default function App() {
         onOpenFolderGuide={() => setIsFolderGuideOpen(true)}
         onOpenImageManager={() => setIsImageManagerOpen(true)}
         onOpenRFQ={() => handleOpenRFQ()}
-        onOpenDeveloperMode={() => setIsDevModeOpen(true)}
       />
 
       {/* Main Page Rendering Router */}
@@ -276,15 +274,9 @@ export default function App() {
         onNavigate={handleNavigate}
         onOpenFolderGuide={() => setIsFolderGuideOpen(true)}
         onOpenRFQ={() => handleOpenRFQ()}
-        onOpenDeveloperMode={() => setIsDevModeOpen(true)}
       />
 
       {/* MODALS */}
-      {/* Hidden Developer Mode Modal */}
-      <DeveloperModeModal
-        isOpen={isDevModeOpen}
-        onClose={() => setIsDevModeOpen(false)}
-      />
       {/* 1. Quick View Modal */}
       {quickViewProduct && (
         <QuickViewModal

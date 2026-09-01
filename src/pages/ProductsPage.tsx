@@ -267,7 +267,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Filter by product name, code (e.g. MT-HF-001), size..."
+                placeholder="Filter by product name, code (e.g. SSC-HF-001), size..."
                 className="w-full pl-10 pr-4 py-2 text-xs bg-[#F4FAFD] focus:bg-white rounded-xl border border-[#B3E5FC] focus:outline-none focus:border-[#0288D1] text-[#0B2838] font-mono"
               />
             </div>
@@ -281,7 +281,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({
                   className="p-2 text-xs rounded-xl border border-[#B3E5FC] bg-white text-[#0B2838] focus:border-[#0288D1] focus:outline-none"
                 >
                   <option value="featured">Best Sellers First</option>
-                  <option value="code">Product Code (MT-A-Z)</option>
+                  <option value="code">Product Code (SSC-A-Z)</option>
                   <option value="price-low">Price: Low to High</option>
                   <option value="price-high">Price: High to Low</option>
                 </select>

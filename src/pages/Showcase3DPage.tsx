@@ -187,9 +187,9 @@ export const Showcase3DPage: React.FC<Showcase3DPageProps> = ({
                 Save your <code>.glb</code> models under <code className="text-[#01579B] font-bold">public/images/3d-models/</code> with matching SKU names:
               </p>
               <div className="font-mono text-[11px] bg-white p-2.5 rounded-xl border border-[#B3E5FC] space-y-1 text-[#0B2838]">
-                <div>public/images/3d-models/MT-HF-001.glb</div>
-                <div>public/images/3d-models/MT-SC-004.glb</div>
-                <div>public/images/3d-models/MT-NH-012.glb</div>
+                <div>public/images/3d-models/SSC-HF-001.glb</div>
+                <div>public/images/3d-models/SSC-SC-004.glb</div>
+                <div>public/images/3d-models/SSC-NH-012.glb</div>
               </div>
             </div>
           </div>
@@ -256,7 +256,7 @@ export const Showcase3DPage: React.FC<Showcase3DPageProps> = ({
                   <li><strong className="text-[#0B2838]">Save Path:</strong> <code>public/images/3d-models/[SKU]-loop.mp4</code></li>
                 </ul>
                 <div className="font-mono text-[11px] bg-white p-2 rounded-xl border border-[#B3E5FC] text-[#62879F]">
-                  e.g. <code>public/images/3d-models/MT-HF-001-loop.mp4</code>
+                  e.g. <code>public/images/3d-models/SSC-HF-001-loop.mp4</code>
                 </div>
               </div>
             </div>
@@ -272,10 +272,10 @@ export const Showcase3DPage: React.FC<Showcase3DPageProps> = ({
             <div className="p-4 bg-white rounded-2xl border border-[#B3E5FC] space-y-2 text-[#0B2838]">
               <div>📁 <strong>public/images/home/</strong> &nbsp;→ (Hero slide images: <code>home-1.jpg, home-2.jpg, home-3.jpg</code>)</div>
               <div>📁 <strong>public/images/products/Our Products/</strong> &nbsp;→ (Main categories & sub-categories product photos)</div>
-              <div className="pl-4 text-[#62879F]">└── 📁 General Surgery/Forceps & Clamps/MT-HF-001.jpg</div>
-              <div className="pl-4 text-[#62879F]">└── 📁 General Surgery/Surgical Scissors/MT-SC-004.jpg</div>
+              <div className="pl-4 text-[#62879F]">└── 📁 General Surgery/Forceps & Clamps/SSC-HF-001.jpg</div>
+              <div className="pl-4 text-[#62879F]">└── 📁 General Surgery/Surgical Scissors/SSC-SC-004.jpg</div>
               <div>📁 <strong>public/images/3d-models/</strong> &nbsp;→ (3D .glb models, video loops, and turntable frames)</div>
-              <div className="pl-4 text-[#62879F]">└── <code>MT-HF-001-loop.mp4</code>, <code>MT-HF-002-loop.mp4</code></div>
+              <div className="pl-4 text-[#62879F]">└── <code>SSC-HF-001-loop.mp4</code>, <code>SSC-HF-002-loop.mp4</code></div>
             </div>
           </div>
         )}

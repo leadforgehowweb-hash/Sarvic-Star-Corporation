@@ -95,7 +95,7 @@ export const RFQModal: React.FC<RFQModalProps> = ({ isOpen, onClose, initialProd
               Thank you, <strong className="text-[#0B2838]">{contactPerson || 'valued partner'}</strong>. Our {brandConfig.origin} Export & B2B Engineering desk has received your request for <strong className="text-[#0B2838]">{companyName || 'your organization'}</strong>.
             </p>
             <div className="p-4 bg-[#F8FCFE] border border-[#B3E5FC] rounded-xl text-xs text-[#355C75] max-w-md mx-auto text-left font-mono space-y-1">
-              <div>Reference: <span className="text-[#0288D1] font-bold">RFQ-MT-{Math.floor(100000 + Math.random() * 900000)}</span></div>
+              <div>Reference: <span className="text-[#0288D1] font-bold">RFQ-SSC-{Math.floor(100000 + Math.random() * 900000)}</span></div>
               <div>Destination Market: {targetMarket}</div>
               <div>Estimated Response Time: Within 4 Business Hours</div>
             </div>
@@ -145,7 +145,7 @@ export const RFQModal: React.FC<RFQModalProps> = ({ isOpen, onClose, initialProd
                   required
                   value={companyName}
                   onChange={(e) => setCompanyName(e.target.value)}
-                  placeholder="e.g. Apex Health Systems LLC"
+                  placeholder="e.g. St. Jude Surgical Hospital / Dental Clinic"
                   className="w-full p-2.5 rounded-xl border border-[#B3E5FC] bg-[#F8FCFE] focus:bg-white text-[#0B2838] text-xs focus:border-[#0288D1] focus:outline-none"
                 />
               </div>

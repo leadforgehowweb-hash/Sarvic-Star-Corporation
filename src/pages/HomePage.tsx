@@ -48,7 +48,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       id: 'video1',
       title: 'Curved Hemostatic Forceps (Kelly)',
       subtitle: 'AISI 420 Martensitic Steel • Dark Studio 360°',
-      code: 'MT-HF-002',
+      code: 'SSC-HF-002',
       src: '/3dslide1.mp4',
       orientation: 'horizontal' as const,
       aspectBadge: '16:9 Landscape HD',
@@ -59,7 +59,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       id: 'video2',
       title: 'Precision Tissue & Dressing Tweezers',
       subtitle: 'Surgical Spring Steel • Clean Studio Podium 360°',
-      code: 'MT-TF-005',
+      code: 'SSC-TF-005',
       src: '/3dslide2.mp4',
       orientation: 'horizontal' as const,
       aspectBadge: '16:9 Landscape HD',
@@ -70,8 +70,8 @@ export const HomePage: React.FC<HomePageProps> = ({
       id: 'video3',
       title: 'Metzenbaum TC Dissecting Scissors',
       subtitle: 'Tungsten Carbide Inlays • 360° Vertical Orbit',
-      code: 'MT-SC-004',
-      src: '/MT-HF-002-loop.mp4',
+      code: 'SSC-SC-004',
+      src: '/SSC-HF-002-loop.mp4',
       orientation: 'portrait' as const,
       aspectBadge: '9:16 Portrait Studio',
       theme: 'light',
@@ -81,8 +81,8 @@ export const HomePage: React.FC<HomePageProps> = ({
       id: 'video4',
       title: 'Scalpel Handle #3 with Knurled Grip',
       subtitle: 'AISI 316 Stainless • Vertical Inspection Loop',
-      code: 'MT-SH-003',
-      src: '/MT-HF-001-loop.mp4',
+      code: 'SSC-SH-003',
+      src: '/SSC-HF-001-loop.mp4',
       orientation: 'portrait' as const,
       aspectBadge: '9:16 Portrait Studio',
       theme: 'light',
@@ -741,8 +741,8 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className="lg:col-span-7 xl:col-span-8">
               <Interactive3DViewer
                 modelType="forceps"
-                productName="Halsted Mosquito Forceps (MT-HF-001)"
-                productCode="MT-HF-001"
+                productName="Halsted Mosquito Forceps (SSC-HF-001)"
+                productCode="SSC-HF-001"
                 initialFinish="German Satin"
                 videoLoopUrl="/3dslide1.mp4"
                 heightClass="h-96 lg:h-[460px]"

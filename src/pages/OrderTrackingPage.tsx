@@ -88,7 +88,7 @@ export const OrderTrackingPage: React.FC<OrderTrackingPageProps> = ({
               type="text"
               value={trackingCode}
               onChange={(e) => setTrackingCode(e.target.value)}
-              placeholder="e.g. MT-EXP-884912"
+              placeholder="e.g. SSC-EXP-884912"
               className="w-full pl-10 pr-4 py-3 text-xs bg-[#F4FAFD] focus:bg-white border border-[#B3E5FC] rounded-xl text-[#0B2838] font-mono focus:outline-none focus:border-[#0288D1]"
             />
           </div>
@@ -102,12 +102,12 @@ export const OrderTrackingPage: React.FC<OrderTrackingPageProps> = ({
 
         <div className="flex items-center gap-2 text-[11px] text-[#62879F] font-mono">
           <span>Demo Codes:</span>
-          <button onClick={() => { setTrackingCode('MT-EXP-884912'); setSearched(true); }} className="text-[#0288D1] hover:underline font-bold">
-            MT-EXP-884912 (Transit)
+          <button onClick={() => { setTrackingCode('SSC-EXP-884912'); setSearched(true); }} className="text-[#0288D1] hover:underline font-bold">
+            SSC-EXP-884912 (Transit)
           </button>
           <span>•</span>
-          <button onClick={() => { setTrackingCode('MT-EXP-440192'); setSearched(true); }} className="text-[#0288D1] hover:underline font-bold">
-            MT-EXP-440192 (Cleanroom)
+          <button onClick={() => { setTrackingCode('SSC-EXP-440192'); setSearched(true); }} className="text-[#0288D1] hover:underline font-bold">
+            SSC-EXP-440192 (Cleanroom)
           </button>
         </div>
       </div>

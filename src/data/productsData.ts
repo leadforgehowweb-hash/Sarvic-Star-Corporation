@@ -263,11 +263,11 @@ export const PRODUCTS: Product[] = [
   // General Surgery -> Forceps & Clamps
   {
     id: 'prod-mt-hf-001',
-    code: 'MT-HF-001',
+    code: 'SSC-HF-001',
     name: 'Kelly Hemostatic Forceps Curved',
     category: 'General Surgery',
     subCategory: 'Forceps & Clamps',
-    folderPath: 'Our Products/General Surgery/Forceps & Clamps/MT-HF-001',
+    folderPath: 'Our Products/General Surgery/Forceps & Clamps/SSC-HF-001',
     price: 34.50,
     wholesalePriceTiers: [
       { minQty: 10, price: 24.00 },
@@ -288,7 +288,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'Precision Interlocking Ratchet Box-Lock',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/General Surgery/Forceps & Clamps/MT-HF-001/',
+    imageFolder: 'images/products/Our Products/General Surgery/Forceps & Clamps/SSC-HF-001/',
     images: [
       '/surgical1.jpg',
       '/surgical2.jpg',
@@ -296,9 +296,9 @@ export const PRODUCTS: Product[] = [
     ],
     has3DModel: true,
     model3DType: 'forceps',
-    videoLoopUrl: '/images/3d-models/MT-HF-002-loop.mp4',
+    videoLoopUrl: '/images/3d-models/SSC-HF-002-loop.mp4',
     shortDesc: 'Precision-curved hemostatic forceps for occluding small-to-medium blood vessels with non-slip grip.',
-    fullDesc: 'Sarvic Star Corporation® Kelly Hemostatic Forceps (MT-HF-001) are hot-drop forged in Sialkot from certified German stainless steel. Features a 3-position positive-locking ratchet and cross-serrated inner jaws engineered for definitive vessel occlusion without traumatic vessel slippage. Ultrasonic passivated for maximum corrosion resistance.',
+    fullDesc: 'Sarvic Star Corporation® Kelly Hemostatic Forceps (SSC-HF-001) are hot-drop forged in Sialkot from certified German stainless steel. Features a 3-position positive-locking ratchet and cross-serrated inner jaws engineered for definitive vessel occlusion without traumatic vessel slippage. Ultrasonic passivated for maximum corrosion resistance.',
     features: [
       'Hot drop-forged from premium surgical stainless steel',
       'Smooth 3-step locking ratchet mechanism',
@@ -314,11 +314,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-mt-sh-001',
-    code: 'MT-SH-001',
+    code: 'SSC-SH-001',
     name: 'Precision Surgical Scalpel Handle No. 3 (Round Knurled Grip)',
     category: 'General Surgery',
     subCategory: 'Scalpel Handles & Blades',
-    folderPath: 'Our Products/General Surgery/Scalpel Handles & Blades/MT-SH-001',
+    folderPath: 'Our Products/General Surgery/Scalpel Handles & Blades/SSC-SH-001',
     price: 26.50,
     wholesalePriceTiers: [
       { minQty: 10, price: 18.00 },
@@ -339,7 +339,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'Ergonomic Diamond Knurled Round Handle',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/General Surgery/Scalpel Handles & Blades/MT-SH-001/',
+    imageFolder: 'images/products/Our Products/General Surgery/Scalpel Handles & Blades/SSC-SH-001/',
     images: [
       '/surgical2.jpg',
       '/surgical3.jpg',
@@ -347,9 +347,9 @@ export const PRODUCTS: Product[] = [
     ],
     has3DModel: true,
     model3DType: 'scalpel',
-    videoLoopUrl: '/images/3d-models/MT-HF-001-loop.mp4',
+    videoLoopUrl: '/images/3d-models/SSC-HF-001-loop.mp4',
     shortDesc: 'Solid cylindrical surgical scalpel handle with non-slip diamond knurling and precision blade fitting.',
-    fullDesc: 'Sarvic Star Corporation® MT-SH-001 Precision Surgical Scalpel Handle is CNC machined from solid medical-grade stainless steel in Sialkot. Engineered with cross-hatched tactile knurling for ultimate micro-surgical fingertip control during delicate incisions.',
+    fullDesc: 'Sarvic Star Corporation® SSC-SH-001 Precision Surgical Scalpel Handle is CNC machined from solid medical-grade stainless steel in Sialkot. Engineered with cross-hatched tactile knurling for ultimate micro-surgical fingertip control during delicate incisions.',
     features: [
       'CNC milled diamond-knurled barrel for maximum grip security',
       'Compatible with standard surgical blade sizes #10, #11, #12, #15',
@@ -364,11 +364,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-mt-hf-002',
-    code: 'MT-HF-002',
+    code: 'SSC-HF-002',
     name: 'Halsted Mosquito Forceps Straight',
     category: 'General Surgery',
     subCategory: 'Forceps & Clamps',
-    folderPath: 'Our Products/General Surgery/Forceps & Clamps/MT-HF-002',
+    folderPath: 'Our Products/General Surgery/Forceps & Clamps/SSC-HF-002',
     price: 28.00,
     wholesalePriceTiers: [
       { minQty: 10, price: 19.50 },
@@ -388,7 +388,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'Full-length Serrated Ratchet',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/General Surgery/Forceps & Clamps/MT-HF-002/',
+    imageFolder: 'images/products/Our Products/General Surgery/Forceps & Clamps/SSC-HF-002/',
     images: [
       '/surgical3.jpg',
       '/surgical1.jpg',
@@ -396,9 +396,9 @@ export const PRODUCTS: Product[] = [
     ],
     has3DModel: true,
     model3DType: 'forceps',
-    videoLoopUrl: '/images/3d-models/MT-HF-002-loop.mp4',
+    videoLoopUrl: '/images/3d-models/SSC-HF-002-loop.mp4',
     shortDesc: 'Ultra-fine mosquito forceps for delicate capillary bleeding control in plastic, pediatric, and general surgery.',
-    fullDesc: 'The MT-HF-002 Mosquito Forceps feature delicately tapered tips designed for precise grasping in constricted surgical fields. Drop-forged and handcrafted in Sialkot with an effortless spring-action box lock.',
+    fullDesc: 'The SSC-HF-002 Mosquito Forceps feature delicately tapered tips designed for precise grasping in constricted surgical fields. Drop-forged and handcrafted in Sialkot with an effortless spring-action box lock.',
     features: [
       'Fine 1.5mm tip profile for delicate microsurgical grasps',
       'Multi-stage locking ratchet for controlled pressure',
@@ -412,11 +412,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-mt-tc-003',
-    code: 'MT-TC-003',
+    code: 'SSC-TC-003',
     name: 'Allis Tissue Forceps 5x6 Teeth',
     category: 'General Surgery',
     subCategory: 'Forceps & Clamps',
-    folderPath: 'Our Products/General Surgery/Forceps & Clamps/MT-TC-003',
+    folderPath: 'Our Products/General Surgery/Forceps & Clamps/SSC-TC-003',
     price: 38.00,
     wholesalePriceTiers: [
       { minQty: 10, price: 26.00 },
@@ -436,7 +436,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'Box Lock with Ratchet',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/General Surgery/Forceps & Clamps/MT-TC-003/',
+    imageFolder: 'images/products/Our Products/General Surgery/Forceps & Clamps/SSC-TC-003/',
     images: [
       '/surgical1.jpg',
       '/surgical3.jpg',
@@ -455,11 +455,11 @@ export const PRODUCTS: Product[] = [
   // General Surgery -> Surgical Scissors
   {
     id: 'prod-mt-sc-004',
-    code: 'MT-SC-004',
+    code: 'SSC-SC-004',
     name: 'Metzenbaum Dissecting Scissors Curved (Tungsten Carbide)',
     category: 'General Surgery',
     subCategory: 'Surgical Scissors',
-    folderPath: 'Our Products/General Surgery/Surgical Scissors/MT-SC-004',
+    folderPath: 'Our Products/General Surgery/Surgical Scissors/SSC-SC-004',
     price: 64.00,
     wholesalePriceTiers: [
       { minQty: 10, price: 44.00 },
@@ -480,7 +480,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'Vacuum-brazed TC Inserts with Micro-Beveled Edge',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/General Surgery/Surgical Scissors/MT-SC-004/',
+    imageFolder: 'images/products/Our Products/General Surgery/Surgical Scissors/SSC-SC-004/',
     images: [
       '/surgical1.jpg',
       '/surgical2.jpg',
@@ -504,11 +504,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-mt-sc-005',
-    code: 'MT-SC-005',
+    code: 'SSC-SC-005',
     name: 'Mayo Dissecting Scissors Straight',
     category: 'General Surgery',
     subCategory: 'Surgical Scissors',
-    folderPath: 'Our Products/General Surgery/Surgical Scissors/MT-SC-005',
+    folderPath: 'Our Products/General Surgery/Surgical Scissors/SSC-SC-005',
     price: 36.00,
     wholesalePriceTiers: [
       { minQty: 10, price: 25.00 },
@@ -528,7 +528,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'Precision Pivot Screw with Uniform Action',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/General Surgery/Surgical Scissors/MT-SC-005/',
+    imageFolder: 'images/products/Our Products/General Surgery/Surgical Scissors/SSC-SC-005/',
     images: [
       '/surgical2.jpg',
       '/surgical3.jpg'
@@ -536,7 +536,7 @@ export const PRODUCTS: Product[] = [
     has3DModel: true,
     model3DType: 'scissors',
     shortDesc: 'Heavy-duty Mayo scissors for cutting dense connective fascia, sutures, and surgical drapes.',
-    fullDesc: 'Hand-finished in Sialkot, the MT-SC-005 Mayo scissors provide unmatched cutting power with minimal hand fatigue.',
+    fullDesc: 'Hand-finished in Sialkot, the SSC-SC-005 Mayo scissors provide unmatched cutting power with minimal hand fatigue.',
     features: ['Strong blades for tough tissue and fascia', 'Reinforced pivot screw', 'Non-reflective satin surface'],
     applications: ['Fascial incision', 'Suture cutting', 'General operating room'],
     packagingInfo: 'Pouch with protective tip sleeve.',
@@ -546,11 +546,11 @@ export const PRODUCTS: Product[] = [
   // General Surgery -> Needle Holders
   {
     id: 'prod-mt-nh-012',
-    code: 'MT-NH-012',
+    code: 'SSC-NH-012',
     name: 'Mayo-Hegar Needle Holder (TC Inserts)',
     category: 'General Surgery',
     subCategory: 'Needle Holders',
-    folderPath: 'Our Products/General Surgery/Needle Holders/MT-NH-012',
+    folderPath: 'Our Products/General Surgery/Needle Holders/SSC-NH-012',
     price: 58.00,
     wholesalePriceTiers: [
       { minQty: 10, price: 39.00 },
@@ -571,7 +571,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'Precision Box-Lock with Micro-Ratchet',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/General Surgery/Needle Holders/MT-NH-012/',
+    imageFolder: 'images/products/Our Products/General Surgery/Needle Holders/SSC-NH-012/',
     images: [
       '/surgical3.jpg',
       '/surgical1.jpg'
@@ -594,11 +594,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-mt-nh-015',
-    code: 'MT-NH-015',
+    code: 'SSC-NH-015',
     name: 'Castroviejo Micro Needle Holder Straight',
     category: 'ENT & Ophthalmic',
     subCategory: 'Micro Scissors & Forceps',
-    folderPath: 'Our Products/ENT & Ophthalmic/Micro Scissors & Forceps/MT-NH-015',
+    folderPath: 'Our Products/ENT & Ophthalmic/Micro Scissors & Forceps/SSC-NH-015',
     price: 89.00,
     wholesalePriceTiers: [
       { minQty: 10, price: 62.00 },
@@ -618,7 +618,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'Flat Spring Action with Light Tactile Feedback',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/ENT & Ophthalmic/Micro Scissors & Forceps/MT-NH-015/',
+    imageFolder: 'images/products/Our Products/ENT & Ophthalmic/Micro Scissors & Forceps/SSC-NH-015/',
     images: [
       '/surgical1.jpg',
       '/surgical2.jpg'
@@ -642,11 +642,11 @@ export const PRODUCTS: Product[] = [
   // General Surgery -> Retractors
   {
     id: 'prod-mt-rt-008',
-    code: 'MT-RT-008',
+    code: 'SSC-RT-008',
     name: 'Weitlaner Self-Retaining Retractor 3x4 Sharp Prongs',
     category: 'General Surgery',
     subCategory: 'Retractors & Speculums',
-    folderPath: 'Our Products/General Surgery/Retractors & Speculums/MT-RT-008',
+    folderPath: 'Our Products/General Surgery/Retractors & Speculums/SSC-RT-008',
     price: 72.00,
     wholesalePriceTiers: [
       { minQty: 10, price: 52.00 },
@@ -666,7 +666,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'Self-Retaining Cam-Action Ratchet',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/General Surgery/Retractors & Speculums/MT-RT-008/',
+    imageFolder: 'images/products/Our Products/General Surgery/Retractors & Speculums/SSC-RT-008/',
     images: [
       '/surgical2.jpg',
       '/surgical3.jpg'
@@ -688,11 +688,11 @@ export const PRODUCTS: Product[] = [
   // Orthopedic -> Bone Rongeurs
   {
     id: 'prod-mt-or-022',
-    code: 'MT-OR-022',
+    code: 'SSC-OR-022',
     name: 'Friedman Bone Rongeur Double Action',
     category: 'Orthopedic Instruments',
     subCategory: 'Bone Rongeurs',
-    folderPath: 'Our Products/Orthopedic Instruments/Bone Rongeurs/MT-OR-022',
+    folderPath: 'Our Products/Orthopedic Instruments/Bone Rongeurs/SSC-OR-022',
     price: 115.00,
     wholesalePriceTiers: [
       { minQty: 10, price: 82.00 },
@@ -712,7 +712,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'Double-Action Compound Leverage Hinge',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/Orthopedic Instruments/Bone Rongeurs/MT-OR-022/',
+    imageFolder: 'images/products/Our Products/Orthopedic Instruments/Bone Rongeurs/SSC-OR-022/',
     images: [
       '/surgical3.jpg',
       '/surgical1.jpg'
@@ -734,11 +734,11 @@ export const PRODUCTS: Product[] = [
   // Scalpel & Handles
   {
     id: 'prod-mt-bp-002',
-    code: 'MT-BP-002',
+    code: 'SSC-BP-002',
     name: 'Bard-Parker Scalpel Handle #3 with Metric Graduations',
     category: 'General Surgery',
     subCategory: 'Surgical Scissors',
-    folderPath: 'Our Products/General Surgery/Surgical Scissors/MT-BP-002',
+    folderPath: 'Our Products/General Surgery/Surgical Scissors/SSC-BP-002',
     price: 16.50,
     wholesalePriceTiers: [
       { minQty: 10, price: 11.00 },
@@ -759,7 +759,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'Precision Blade Keyhole Slot',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/General Surgery/Surgical Scissors/MT-BP-002/',
+    imageFolder: 'images/products/Our Products/General Surgery/Surgical Scissors/SSC-BP-002/',
     images: [
       '/surgical1.jpg',
       '/surgical2.jpg'
@@ -781,11 +781,11 @@ export const PRODUCTS: Product[] = [
   // Dental Instruments -> Extraction Forceps
   {
     id: 'prod-mt-ds-019',
-    code: 'MT-DS-019',
+    code: 'SSC-DS-019',
     name: 'Universal Dental Extraction Forceps #150 Upper',
     category: 'Dental Instruments',
     subCategory: 'Extraction Forceps',
-    folderPath: 'Our Products/Dental Instruments/Extraction Forceps/MT-DS-019',
+    folderPath: 'Our Products/Dental Instruments/Extraction Forceps/SSC-DS-019',
     price: 48.00,
     wholesalePriceTiers: [
       { minQty: 10, price: 34.00 },
@@ -805,7 +805,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'Serrated Diamond Beak Texture',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/Dental Instruments/Extraction Forceps/MT-DS-019/',
+    imageFolder: 'images/products/Our Products/Dental Instruments/Extraction Forceps/SSC-DS-019/',
     images: [
       '/surgical2.jpg',
       '/surgical3.jpg',
@@ -824,11 +824,11 @@ export const PRODUCTS: Product[] = [
   // Surgical Sets -> Minor Surgery Set
   {
     id: 'prod-mt-set-101',
-    code: 'MT-SET-101',
+    code: 'SSC-SET-101',
     name: 'Executive Minor Surgery Set 14-Pieces in Stainless Cassette',
     category: 'Surgical Sets',
     subCategory: 'Minor Surgery Sets',
-    folderPath: 'Our Products/Surgical Sets/Minor Surgery Sets/MT-SET-101',
+    folderPath: 'Our Products/Surgical Sets/Minor Surgery Sets/SSC-SET-101',
     price: 245.00,
     wholesalePriceTiers: [
       { minQty: 5, price: 185.00 },
@@ -848,7 +848,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'Includes TC Upgrades on Metzenbaum & Mayo-Hegar',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/Surgical Sets/Minor Surgery Sets/MT-SET-101/',
+    imageFolder: 'images/products/Our Products/Surgical Sets/Minor Surgery Sets/SSC-SET-101/',
     images: [
       '/surgical1.jpg',
       '/surgical2.jpg',
@@ -857,7 +857,7 @@ export const PRODUCTS: Product[] = [
     has3DModel: true,
     model3DType: 'forceps',
     shortDesc: 'Complete 14-piece German-standard minor surgical set in a laser-slotted autoclavable stainless steel tray.',
-    fullDesc: 'The definitive turn-key kit for emergency departments, outpatient clinics, and military field hospitals. Contains MT-HF-001, MT-HF-002, MT-SC-004 TC, MT-SC-005, MT-NH-012 TC, MT-BP-002, Adson tissue forceps, sponge clamps, and probes inside an electropolished silicone-cushioned sterilization cassette.',
+    fullDesc: 'The definitive turn-key kit for emergency departments, outpatient clinics, and military field hospitals. Contains SSC-HF-001, SSC-HF-002, SSC-SC-004 TC, SSC-SC-005, SSC-NH-012 TC, SSC-BP-002, Adson tissue forceps, sponge clamps, and probes inside an electropolished silicone-cushioned sterilization cassette.',
     features: [
       '14 premium surgical instruments for minor operative procedures',
       'Includes Tungsten Carbide upgrades on scissors and needle holders',
@@ -874,11 +874,11 @@ export const PRODUCTS: Product[] = [
   // Dental Instruments -> Root Elevators & Scalers
   {
     id: 'prod-mt-de-021',
-    code: 'MT-DE-021',
+    code: 'SSC-DE-021',
     name: 'Cryer Root Elevator Pair (Left & Right #30/31)',
     category: 'Dental Instruments',
     subCategory: 'Root Elevators & Luxators',
-    folderPath: 'Our Products/Dental Instruments/Root Elevators & Luxators/MT-DE-021',
+    folderPath: 'Our Products/Dental Instruments/Root Elevators & Luxators/SSC-DE-021',
     price: 38.00,
     wholesalePriceTiers: [
       { minQty: 10, price: 26.00 },
@@ -898,7 +898,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'Ergonomic Hexagonal Handle for Maximum Rotational Torque',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/Dental Instruments/Root Elevators & Luxators/MT-DE-021/',
+    imageFolder: 'images/products/Our Products/Dental Instruments/Root Elevators & Luxators/SSC-DE-021/',
     images: [
       '/surgical2.jpg',
       '/surgical3.jpg'
@@ -913,11 +913,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-mt-ds-035',
-    code: 'MT-DS-035',
+    code: 'SSC-DS-035',
     name: 'Gracey Periodontal Curette Set 1/2, 7/8, 11/12, 13/14',
     category: 'Dental Instruments',
     subCategory: 'Scalers & Curettes',
-    folderPath: 'Our Products/Dental Instruments/Scalers & Curettes/MT-DS-035',
+    folderPath: 'Our Products/Dental Instruments/Scalers & Curettes/SSC-DS-035',
     price: 52.00,
     wholesalePriceTiers: [
       { minQty: 10, price: 36.00 },
@@ -937,7 +937,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'Ultra-Light 9.5mm Hollow Ergonomic Handle',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/Dental Instruments/Scalers & Curettes/MT-DS-035/',
+    imageFolder: 'images/products/Our Products/Dental Instruments/Scalers & Curettes/SSC-DS-035/',
     images: [
       '/surgical3.jpg',
       '/surgical1.jpg'
@@ -954,11 +954,11 @@ export const PRODUCTS: Product[] = [
   // Gynecology & Obstetrics
   {
     id: 'prod-mt-gy-011',
-    code: 'MT-GY-011',
+    code: 'SSC-GY-011',
     name: 'Cusco Vaginal Speculum Center-Screw Stainless Steel',
     category: 'Gynecology & Obstetrics',
     subCategory: 'Vaginal Speculums',
-    folderPath: 'Our Products/Gynecology & Obstetrics/Vaginal Speculums/MT-GY-011',
+    folderPath: 'Our Products/Gynecology & Obstetrics/Vaginal Speculums/SSC-GY-011',
     price: 44.00,
     wholesalePriceTiers: [
       { minQty: 10, price: 31.00 },
@@ -978,7 +978,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'Quick-Release Central Locking Screw Mechanism',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/Gynecology & Obstetrics/Vaginal Speculums/MT-GY-011/',
+    imageFolder: 'images/products/Our Products/Gynecology & Obstetrics/Vaginal Speculums/SSC-GY-011/',
     images: [
       '/surgical1.jpg',
       '/surgical2.jpg'
@@ -993,11 +993,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-mt-gy-024',
-    code: 'MT-GY-024',
+    code: 'SSC-GY-024',
     name: 'Bozeman Uterine Dressing Forceps Double Curved',
     category: 'Gynecology & Obstetrics',
     subCategory: 'Uterine & Dressing Forceps',
-    folderPath: 'Our Products/Gynecology & Obstetrics/Uterine & Dressing Forceps/MT-GY-024',
+    folderPath: 'Our Products/Gynecology & Obstetrics/Uterine & Dressing Forceps/SSC-GY-024',
     price: 42.00,
     wholesalePriceTiers: [
       { minQty: 10, price: 29.50 },
@@ -1017,7 +1017,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'Box Lock with 3-Step Ratchet',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/Gynecology & Obstetrics/Uterine & Dressing Forceps/MT-GY-024/',
+    imageFolder: 'images/products/Our Products/Gynecology & Obstetrics/Uterine & Dressing Forceps/SSC-GY-024/',
     images: [
       '/surgical2.jpg',
       '/surgical3.jpg'
@@ -1034,11 +1034,11 @@ export const PRODUCTS: Product[] = [
   // ENT & Ophthalmic
   {
     id: 'prod-mt-ent-018',
-    code: 'MT-ENT-018',
+    code: 'SSC-ENT-018',
     name: 'Hartmann Alligator Ear Forceps Fine Serrated',
     category: 'ENT & Ophthalmic',
     subCategory: 'Nasal & Ear Speculums',
-    folderPath: 'Our Products/ENT & Ophthalmic/Nasal & Ear Speculums/MT-ENT-018',
+    folderPath: 'Our Products/ENT & Ophthalmic/Nasal & Ear Speculums/SSC-ENT-018',
     price: 46.00,
     wholesalePriceTiers: [
       { minQty: 10, price: 32.00 },
@@ -1058,7 +1058,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'Precision Wire-Action Pivot Shaft',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/ENT & Ophthalmic/Nasal & Ear Speculums/MT-ENT-018/',
+    imageFolder: 'images/products/Our Products/ENT & Ophthalmic/Nasal & Ear Speculums/SSC-ENT-018/',
     images: [
       '/surgical3.jpg',
       '/surgical1.jpg'
@@ -1075,11 +1075,11 @@ export const PRODUCTS: Product[] = [
   // Cardiovascular & Thoracic
   {
     id: 'prod-mt-cv-009',
-    code: 'MT-CV-009',
+    code: 'SSC-CV-009',
     name: 'DeBakey Atraumatic Aortic Vascular Clamp Curved',
     category: 'Cardiovascular & Thoracic',
     subCategory: 'Vascular Clamps',
-    folderPath: 'Our Products/Cardiovascular & Thoracic/Vascular Clamps/MT-CV-009',
+    folderPath: 'Our Products/Cardiovascular & Thoracic/Vascular Clamps/SSC-CV-009',
     price: 88.00,
     wholesalePriceTiers: [
       { minQty: 10, price: 62.00 },
@@ -1099,7 +1099,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'Precision Box-Lock with Spring-Tension Ratchet',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/Cardiovascular & Thoracic/Vascular Clamps/MT-CV-009/',
+    imageFolder: 'images/products/Our Products/Cardiovascular & Thoracic/Vascular Clamps/SSC-CV-009/',
     images: [
       '/surgical1.jpg',
       '/surgical2.jpg'
@@ -1116,11 +1116,11 @@ export const PRODUCTS: Product[] = [
   // Plastic & Reconstructive Surgery
   {
     id: 'prod-mt-ps-014',
-    code: 'MT-PS-014',
+    code: 'SSC-PS-014',
     name: 'Gorney-Freeman Facelift Scissors Curved (SuperCut & TC)',
     category: 'Plastic & Reconstructive Surgery',
     subCategory: 'Facelift & Dissecting Scissors',
-    folderPath: 'Our Products/Plastic & Reconstructive Surgery/Facelift & Dissecting Scissors/MT-PS-014',
+    folderPath: 'Our Products/Plastic & Reconstructive Surgery/Facelift & Dissecting Scissors/SSC-PS-014',
     price: 78.00,
     wholesalePriceTiers: [
       { minQty: 10, price: 54.00 },
@@ -1140,7 +1140,7 @@ export const PRODUCTS: Product[] = [
     jawType: 'SuperCut Razor Edge One Side, Micro-Serrated Other Side',
     autoclavable: true,
     origin: 'Sialkot, Pakistan',
-    imageFolder: 'images/products/Our Products/Plastic & Reconstructive Surgery/Facelift & Dissecting Scissors/MT-PS-014/',
+    imageFolder: 'images/products/Our Products/Plastic & Reconstructive Surgery/Facelift & Dissecting Scissors/SSC-PS-014/',
     images: [
       '/surgical2.jpg',
       '/surgical3.jpg',
