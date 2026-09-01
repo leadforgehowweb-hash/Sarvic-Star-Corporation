@@ -70,11 +70,11 @@ export const INITIAL_BRAND_CONFIG: BrandConfig = {
     workingHours: 'Mon - Sat: 8:00 AM - 6:00 PM PKT'
   },
   logoConfig: {
-    type: 'monogram',
-    customImageUrl: '',
+    type: 'custom_image',
+    customImageUrl: '/logossc.jpg',
     logoDisplayMode: 'image_and_text',
     logoShape: 'transparent',
-    logoHeight: 44,
+    logoHeight: 48,
     accentGradientStart: '#0288D1',
     accentGradientEnd: '#00B0FF'
   },
@@ -117,11 +117,11 @@ export const BRAND_PRESETS: Record<string, { label: string; description: string;
         workingHours: 'Mon - Sat: 8:00 AM - 6:00 PM PKT'
       },
       logoConfig: {
-        type: 'monogram',
-        customImageUrl: '',
+        type: 'custom_image',
+        customImageUrl: '/logossc.jpg',
         logoDisplayMode: 'image_and_text',
-        logoShape: 'rounded',
-        logoHeight: 44,
+        logoShape: 'transparent',
+        logoHeight: 48,
         accentGradientStart: '#0288D1',
         accentGradientEnd: '#00B0FF'
       },
@@ -253,7 +253,11 @@ export const BrandProvider: React.FC<{ children: React.ReactNode }> = ({ childre
           ...INITIAL_BRAND_CONFIG.logoConfig,
           ...(parsed.logoConfig || {})
         };
-        // If it's a custom image and previously had the default 'rounded' with gradient, normalize to clean 'transparent'
+        // Normalize logoConfig to use the permanent /logossc.jpg if not explicitly set
+        if (!resolvedLogoConfig.customImageUrl) {
+          resolvedLogoConfig.customImageUrl = '/logossc.jpg';
+          resolvedLogoConfig.type = 'custom_image';
+        }
         if (resolvedLogoConfig.type === 'custom_image' && resolvedLogoConfig.logoShape === 'rounded') {
           resolvedLogoConfig.logoShape = 'transparent';
         }
